@@ -1,0 +1,7 @@
+{
+  "scoring": "neg_mean_squared_error",
+  "n_out_cv": 4,
+  "n_in_cv": 4,
+  "random_state": 16252329,
+  "inner_cv": "same policy as the outer split"
+}

@@ -1,0 +1,2985 @@
+{
+  "_skipped": {
+    "ANFIS": {
+      "1": {
+        "reason": "ANFIS is reported on the four problems the published Table 1 reports it on. This problem is within reach by rule count -- 2^5 rules, fewer than the 2^13 that housing was run with -- but extending the ANFIS column beyond the published four is outside the scope of this revision, which keeps that column as the paper defines it.",
+        "projection": {
+          "rules": "2^5",
+          "n_features": 5,
+          "n": 3443,
+          "reason_kind": "scope: published ANFIS column is four problems"
+        }
+      },
+      "2": {
+        "reason": "ANFIS is reported on the four problems the published Table 1 reports it on. This problem is within reach by rule count -- 2^5 rules, fewer than the 2^13 that housing was run with -- but extending the ANFIS column beyond the published four is outside the scope of this revision, which keeps that column as the paper defines it.",
+        "projection": {
+          "rules": "2^5",
+          "n_features": 5,
+          "n": 3443,
+          "reason_kind": "scope: published ANFIS column is four problems"
+        }
+      },
+      "3": {
+        "reason": "ANFIS is reported on the four problems the published Table 1 reports it on. This problem is within reach by rule count -- 2^5 rules, fewer than the 2^13 that housing was run with -- but extending the ANFIS column beyond the published four is outside the scope of this revision, which keeps that column as the paper defines it.",
+        "projection": {
+          "rules": "2^5",
+          "n_features": 5,
+          "n": 3443,
+          "reason_kind": "scope: published ANFIS column is four problems"
+        }
+      },
+      "4": {
+        "reason": "ANFIS is reported on the four problems the published Table 1 reports it on. This problem is within reach by rule count -- 2^5 rules, fewer than the 2^13 that housing was run with -- but extending the ANFIS column beyond the published four is outside the scope of this revision, which keeps that column as the paper defines it.",
+        "projection": {
+          "rules": "2^5",
+          "n_features": 5,
+          "n": 3443,
+          "reason_kind": "scope: published ANFIS column is four problems"
+        }
+      }
+    }
+  },
+  "LESS-B": {
+    "1": 19.242311416787125,
+    "2": 26.06993517254286,
+    "3": 16.67359229900327,
+    "4": 13.97529897666207
+  },
+  "_metrics": {
+    "LESS-B": {
+      "1": {
+        "mse": 19.242311416787125,
+        "rmse": 4.386605910813864,
+        "mae": 3.1142844978359103,
+        "r2": 0.9499489305596591,
+        "refit_time": 10.388344049453735,
+        "grid_time": 64.23461504100123,
+        "predict_time": 0.7850089170096908,
+        "best_params": {
+          "kernel_coeff": 0.01,
+          "local_estimator": "tree",
+          "n_subsets": 20,
+          "random_state": 16252329
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.08,
+          "projected_peak_gb": 0.65,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              7.921,
+              8.2423,
+              8.9558
+            ],
+            "peak_gb": [
+              0.023,
+              0.0267,
+              0.0386
+            ],
+            "fit_curve": {
+              "a": 0.019977007496999256,
+              "exponent": 0.7,
+              "offset": 7.1053
+            },
+            "predict_row_exponent": -0.985,
+            "memory_exponent": 1.0,
+            "memory_measurable": true,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 8,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 308.03638749537976,
+            "serial_seconds": 12.818030289265067,
+            "fixed_gb": 0.0229949951171875,
+            "grows_gb": 0.08398750128220048,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 6.46,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_subsets": 20,
+              "kernel_coeff": 0.1,
+              "local_estimator": "tree",
+              "random_state": 16252329
+            }
+          }
+        }
+      },
+      "2": {
+        "mse": 26.06993517254286,
+        "rmse": 5.105872616168843,
+        "mae": 3.2411174957594384,
+        "r2": 0.9386620316177415,
+        "refit_time": 7.514014959335327,
+        "grid_time": 59.44292087497888,
+        "predict_time": 0.43560337502276525,
+        "best_params": {
+          "kernel_coeff": 0.01,
+          "local_estimator": "tree",
+          "n_subsets": 10,
+          "random_state": 16252329
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.07,
+          "projected_peak_gb": 0.48,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              8.8369,
+              8.8007,
+              8.6701
+            ],
+            "peak_gb": [
+              0.0267,
+              0.0263,
+              0.0374
+            ],
+            "fit_curve": {
+              "a": 9.665961650663345,
+              "exponent": -0.017,
+              "offset": 0.0
+            },
+            "predict_row_exponent": -1.109,
+            "memory_exponent": 1.0,
+            "memory_measurable": true,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 8,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 259.54155867723006,
+            "serial_seconds": 9.180774217163027,
+            "fixed_gb": 0.0263214111328125,
+            "grows_gb": 0.06107457447576882,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 7.02,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_subsets": 20,
+              "kernel_coeff": 0.1,
+              "local_estimator": "tree",
+              "random_state": 16252329
+            }
+          }
+        }
+      },
+      "3": {
+        "mse": 16.67359229900327,
+        "rmse": 4.083331029809274,
+        "mae": 2.932284157605675,
+        "r2": 0.9569709255960385,
+        "refit_time": 7.904396057128906,
+        "grid_time": 57.63444625001284,
+        "predict_time": 0.4894939169753343,
+        "best_params": {
+          "kernel_coeff": 0.01,
+          "local_estimator": "tree",
+          "n_subsets": 10,
+          "random_state": 16252329
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.07,
+          "projected_peak_gb": 0.49,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              8.194,
+              7.9136,
+              8.2632
+            ],
+            "peak_gb": [
+              0.0278,
+              0.0266,
+              0.0382
+            ],
+            "fit_curve": {
+              "a": 0.0003451573138984491,
+              "exponent": 1.0,
+              "offset": 7.9893
+            },
+            "predict_row_exponent": -0.978,
+            "memory_exponent": 1.0,
+            "memory_measurable": true,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 8,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 254.22108609537165,
+            "serial_seconds": 9.70830995683063,
+            "fixed_gb": 0.02655029296875,
+            "grows_gb": 0.061399278157413584,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 6.7,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_subsets": 20,
+              "kernel_coeff": 0.01,
+              "local_estimator": "tree",
+              "random_state": 16252329
+            }
+          }
+        }
+      },
+      "4": {
+        "mse": 13.97529897666207,
+        "rmse": 3.7383551164465465,
+        "mae": 2.744763413007869,
+        "r2": 0.9628241928447335,
+        "refit_time": 10.320824146270752,
+        "grid_time": 60.47244745801436,
+        "predict_time": 0.7892729580053128,
+        "best_params": {
+          "kernel_coeff": 0.01,
+          "local_estimator": "tree",
+          "n_subsets": 20,
+          "random_state": 16252329
+        },
+        "n_train": 2583,
+        "n_test": 860,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.07,
+          "projected_peak_gb": 0.42,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              8.8173,
+              9.4009,
+              9.1504
+            ],
+            "peak_gb": [
+              0.0271,
+              0.0229,
+              0.0349
+            ],
+            "fit_curve": {
+              "a": 0.20030872492804072,
+              "exponent": 0.25,
+              "offset": 8.2524
+            },
+            "predict_row_exponent": -0.959,
+            "memory_exponent": 1.0,
+            "memory_measurable": true,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 8,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 243.12652299030265,
+            "serial_seconds": 10.642948778074299,
+            "fixed_gb": 0.02294921875,
+            "grows_gb": 0.05240921663974488,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 5.77,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_subsets": 20,
+              "kernel_coeff": 0.1,
+              "local_estimator": "tree",
+              "random_state": 16252329
+            }
+          }
+        }
+      }
+    },
+    "LESS-A": {
+      "1": {
+        "mse": 23.114746762112343,
+        "rmse": 4.807779816309431,
+        "mae": 3.5890444310063128,
+        "r2": 0.9398763604731459,
+        "refit_time": 9.130818843841553,
+        "grid_time": 60.01806724999915,
+        "predict_time": 0.781543541001156,
+        "best_params": {
+          "kernel_coeff": 0.01,
+          "local_estimator": "tree",
+          "n_subsets": 20,
+          "random_state": 16252329
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.07,
+          "projected_peak_gb": 0.4,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              8.4214,
+              9.3005,
+              8.4722
+            ],
+            "peak_gb": [
+              0.0276,
+              0.0261,
+              0.0359
+            ],
+            "fit_curve": {
+              "a": 8.982443915913882,
+              "exponent": -0.005,
+              "offset": 0.0
+            },
+            "predict_row_exponent": -1.015,
+            "memory_exponent": 1.0,
+            "memory_measurable": true,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 8,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 250.7049955250641,
+            "serial_seconds": 9.620014887591537,
+            "fixed_gb": 0.0261383056640625,
+            "grows_gb": 0.05007480271683165,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 6.5,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_subsets": 20,
+              "kernel_coeff": 0.01,
+              "local_estimator": "tree",
+              "random_state": 16252329
+            }
+          }
+        }
+      },
+      "2": {
+        "mse": 28.172349423014058,
+        "rmse": 5.307763128005437,
+        "mae": 3.5648736012245026,
+        "r2": 0.9337154209733993,
+        "refit_time": 7.960666656494141,
+        "grid_time": 60.43853133398807,
+        "predict_time": 0.606513000006089,
+        "best_params": {
+          "kernel_coeff": 0.1,
+          "local_estimator": "tree",
+          "n_subsets": 10,
+          "random_state": 16252329
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.09,
+          "projected_peak_gb": 0.12,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              7.9094,
+              8.5077,
+              9.3982
+            ],
+            "peak_gb": [
+              0.026,
+              0.0313,
+              0.031
+            ],
+            "fit_curve": {
+              "a": 1.1581832305880675,
+              "exponent": 0.25,
+              "offset": 3.5723
+            },
+            "predict_row_exponent": -0.971,
+            "memory_exponent": 0.25,
+            "memory_measurable": true,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 8,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 325.9673108859012,
+            "serial_seconds": 12.846751873851035,
+            "fixed_gb": 0.025970458984375,
+            "grows_gb": 0.013071855012825095,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 6.64,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_subsets": 20,
+              "kernel_coeff": 0.01,
+              "local_estimator": "tree",
+              "random_state": 16252329
+            }
+          }
+        }
+      },
+      "3": {
+        "mse": 21.401874889553042,
+        "rmse": 4.626216044409626,
+        "mae": 3.4241673597807667,
+        "r2": 0.9447687786475442,
+        "refit_time": 7.159319877624512,
+        "grid_time": 59.13775337502011,
+        "predict_time": 0.5566627499938477,
+        "best_params": {
+          "kernel_coeff": 0.01,
+          "local_estimator": "tree",
+          "n_subsets": 10,
+          "random_state": 16252329
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.08,
+          "projected_peak_gb": 0.29,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              8.035,
+              9.0785,
+              8.9533
+            ],
+            "peak_gb": [
+              0.026,
+              0.0296,
+              0.0367
+            ],
+            "fit_curve": {
+              "a": 0.6261759588995763,
+              "exponent": 0.25,
+              "offset": 5.9679
+            },
+            "predict_row_exponent": -0.939,
+            "memory_exponent": 0.5,
+            "memory_measurable": true,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 8,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 285.2879084643551,
+            "serial_seconds": 11.549988166305548,
+            "fixed_gb": 0.0259857177734375,
+            "grows_gb": 0.03494961306928805,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 6.36,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_subsets": 20,
+              "kernel_coeff": 0.01,
+              "local_estimator": "tree",
+              "random_state": 16252329
+            }
+          }
+        }
+      },
+      "4": {
+        "mse": 17.461589796200347,
+        "rmse": 4.178706713350477,
+        "mae": 3.134759916438613,
+        "r2": 0.9535502821104612,
+        "refit_time": 8.625997066497803,
+        "grid_time": 64.2703670829942,
+        "predict_time": 0.6568149999948218,
+        "best_params": {
+          "kernel_coeff": 0.01,
+          "local_estimator": "tree",
+          "n_subsets": 10,
+          "random_state": 16252329
+        },
+        "n_train": 2583,
+        "n_test": 860,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.1,
+          "projected_peak_gb": 0.4,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              8.6485,
+              9.8193,
+              10.6105
+            ],
+            "peak_gb": [
+              0.0267,
+              0.0288,
+              0.0359
+            ],
+            "fit_curve": {
+              "a": 1.4762969241486623,
+              "exponent": 0.25,
+              "offset": 3.2777
+            },
+            "predict_row_exponent": -1.053,
+            "memory_exponent": 1.0,
+            "memory_measurable": true,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 8,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 360.3879834219894,
+            "serial_seconds": 14.90701560797811,
+            "fixed_gb": 0.0266571044921875,
+            "grows_gb": 0.04986876414014406,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 6.35,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_subsets": 20,
+              "kernel_coeff": 0.01,
+              "local_estimator": "tree",
+              "random_state": 16252329
+            }
+          }
+        }
+      }
+    },
+    "TSK": {
+      "1": {
+        "mse": 22.700659419643994,
+        "rmse": 4.764520901375499,
+        "mae": 3.28525053794829,
+        "r2": 0.9409534407616484,
+        "refit_time": 3.0433828830718994,
+        "grid_time": 36.66845666698646,
+        "predict_time": 0.013667082996107638,
+        "best_params": {
+          "consequent": "RandomForestRegressor(random_state=16252329)",
+          "fuzzy_index": 2.0,
+          "n_cluster": 5,
+          "random_state": 16252329
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "probe": {
+            "not_probeable": "grid value consequent=Ridge() does not survive a JSON round trip"
+          },
+          "n_jobs": 5
+        }
+      },
+      "2": {
+        "mse": 26.61866684012713,
+        "rmse": 5.15932813844275,
+        "mae": 3.324421134274177,
+        "r2": 0.9373709625968996,
+        "refit_time": 3.0224688053131104,
+        "grid_time": 35.52975874999538,
+        "predict_time": 0.01210962500772439,
+        "best_params": {
+          "consequent": "RandomForestRegressor(random_state=16252329)",
+          "fuzzy_index": 2.0,
+          "n_cluster": 5,
+          "random_state": 16252329
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "probe": {
+            "not_probeable": "grid value consequent=Ridge() does not survive a JSON round trip"
+          },
+          "n_jobs": 5
+        }
+      },
+      "3": {
+        "mse": 20.484369972570633,
+        "rmse": 4.525966192159485,
+        "mae": 3.229538553720703,
+        "r2": 0.9471365579857253,
+        "refit_time": 3.0010712146759033,
+        "grid_time": 34.833750250021694,
+        "predict_time": 0.012193250004202127,
+        "best_params": {
+          "consequent": "RandomForestRegressor(random_state=16252329)",
+          "fuzzy_index": 2.0,
+          "n_cluster": 5,
+          "random_state": 16252329
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "probe": {
+            "not_probeable": "grid value consequent=Ridge() does not survive a JSON round trip"
+          },
+          "n_jobs": 5
+        }
+      },
+      "4": {
+        "mse": 17.80710126556493,
+        "rmse": 4.21984611870681,
+        "mae": 3.0198516150233248,
+        "r2": 0.9526311842237913,
+        "refit_time": 3.606821060180664,
+        "grid_time": 41.166241083003115,
+        "predict_time": 0.014708208007505164,
+        "best_params": {
+          "consequent": "RandomForestRegressor(random_state=16252329)",
+          "fuzzy_index": 2.0,
+          "n_cluster": 5,
+          "random_state": 16252329
+        },
+        "n_train": 2583,
+        "n_test": 860,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "probe": {
+            "not_probeable": "grid value consequent=Ridge() does not survive a JSON round trip"
+          },
+          "n_jobs": 5
+        }
+      }
+    },
+    "RF": {
+      "1": {
+        "mse": 23.37143304131216,
+        "rmse": 4.834401001293972,
+        "mae": 3.5297120461392,
+        "r2": 0.9392086952168085,
+        "refit_time": 0.28310608863830566,
+        "grid_time": 1.6763785000075586,
+        "predict_time": 0.005826707987580448,
+        "best_params": {
+          "max_depth": 8,
+          "n_estimators": 100,
+          "random_state": 16252329
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.02,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 4,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.1026,
+              0.1271,
+              0.1863
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0008
+            ],
+            "fit_curve": {
+              "a": 0.0005428224232267461,
+              "exponent": 0.85,
+              "offset": 0.0536
+            },
+            "predict_row_exponent": -0.79,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 4,
+            "grid_workers": 4,
+            "outer_folds": 4,
+            "grid_seconds_serial": 4.801673341366608,
+            "serial_seconds": 0.49812551193223203,
+            "fixed_gb": 1.52587890625e-05,
+            "grows_gb": 0.003161029667817345,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.97,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_estimators": 200,
+              "max_depth": 8,
+              "random_state": 16252329
+            }
+          }
+        }
+      },
+      "2": {
+        "mse": 29.42698743265867,
+        "rmse": 5.424664729977206,
+        "mae": 3.591920133110203,
+        "r2": 0.9307634785900591,
+        "refit_time": 0.5395529270172119,
+        "grid_time": 1.8712668340012897,
+        "predict_time": 0.011008041998138651,
+        "best_params": {
+          "max_depth": 8,
+          "n_estimators": 200,
+          "random_state": 16252329
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.02,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 4,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.0992,
+              0.1241,
+              0.1755
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0007
+            ],
+            "fit_curve": {
+              "a": 0.0031139454438888093,
+              "exponent": 0.6,
+              "offset": 0.0245
+            },
+            "predict_row_exponent": -0.828,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 4,
+            "grid_workers": 4,
+            "outer_folds": 4,
+            "grid_seconds_serial": 3.7556663902521885,
+            "serial_seconds": 0.3837821544399404,
+            "fixed_gb": 4.57763671875e-05,
+            "grows_gb": 0.002702934797420058,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.86,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_estimators": 200,
+              "max_depth": 8,
+              "random_state": 16252329
+            }
+          }
+        }
+      },
+      "3": {
+        "mse": 20.014716923280524,
+        "rmse": 4.473781054463944,
+        "mae": 3.3617246151704974,
+        "r2": 0.9483485785053322,
+        "refit_time": 0.53603196144104,
+        "grid_time": 1.8830579580098856,
+        "predict_time": 0.011262083979090676,
+        "best_params": {
+          "max_depth": 8,
+          "n_estimators": 200,
+          "random_state": 16252329
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.03,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 4,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.0976,
+              0.1187,
+              0.1741
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0012
+            ],
+            "fit_curve": {
+              "a": 0.00017182405654522458,
+              "exponent": 1.0,
+              "offset": 0.0633
+            },
+            "predict_row_exponent": -0.803,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 4,
+            "grid_workers": 4,
+            "outer_folds": 4,
+            "grid_seconds_serial": 4.762485727886319,
+            "serial_seconds": 0.5191319425686985,
+            "fixed_gb": 3.0517578125e-05,
+            "grows_gb": 0.004733915107194767,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.92,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_estimators": 200,
+              "max_depth": 8,
+              "random_state": 16252329
+            }
+          }
+        }
+      },
+      "4": {
+        "mse": 16.269445629887166,
+        "rmse": 4.033540086560088,
+        "mae": 3.050502074493869,
+        "r2": 0.9567215145615269,
+        "refit_time": 0.328693151473999,
+        "grid_time": 1.9898324579990003,
+        "predict_time": 0.006551208003656939,
+        "best_params": {
+          "max_depth": 8,
+          "n_estimators": 100,
+          "random_state": 16252329
+        },
+        "n_train": 2583,
+        "n_test": 860,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.03,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 4,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.1214,
+              0.1481,
+              0.24
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0013
+            ],
+            "fit_curve": {
+              "a": 0.0002702703565657895,
+              "exponent": 1.0,
+              "offset": 0.0647
+            },
+            "predict_row_exponent": -0.807,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 4,
+            "grid_workers": 4,
+            "outer_folds": 4,
+            "grid_seconds_serial": 7.045657914487917,
+            "serial_seconds": 0.7779058122241574,
+            "fixed_gb": 3.0517578125e-05,
+            "grows_gb": 0.005102397120276163,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.92,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_estimators": 200,
+              "max_depth": 8,
+              "random_state": 16252329
+            }
+          }
+        }
+      }
+    },
+    "KNN": {
+      "1": {
+        "mse": 35.840961904761905,
+        "rmse": 5.986732155755918,
+        "mae": 3.9612078977932637,
+        "r2": 0.9067742728901655,
+        "refit_time": 0.002231121063232422,
+        "grid_time": 0.08800966700073332,
+        "predict_time": 0.002288041985593736,
+        "best_params": {
+          "n_neighbors": 3
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.0,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.0011,
+              0.0011,
+              0.0008
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "fit_curve": {
+              "a": 0.003934038475291009,
+              "exponent": -0.235,
+              "offset": 0.0
+            },
+            "predict_row_exponent": -0.268,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 6,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 0.034941039004304085,
+            "serial_seconds": 0.009855807928960559,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.0,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 1.07,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_neighbors": 100
+            }
+          }
+        }
+      },
+      "2": {
+        "mse": 38.778205519163755,
+        "rmse": 6.227214908702265,
+        "mae": 4.163475029036004,
+        "r2": 0.9087617085231448,
+        "refit_time": 0.001711130142211914,
+        "grid_time": 0.08849095800542273,
+        "predict_time": 0.002796499989926815,
+        "best_params": {
+          "n_neighbors": 5
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.0,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.0013,
+              0.0007,
+              0.0009
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "fit_curve": {
+              "a": 0.0050827174870692994,
+              "exponent": -0.289,
+              "offset": 0.0
+            },
+            "predict_row_exponent": -0.181,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 6,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 0.1247945681620227,
+            "serial_seconds": 0.009624813862320796,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.0,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 4.02,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_neighbors": 100
+            }
+          }
+        }
+      },
+      "3": {
+        "mse": 34.70105951219512,
+        "rmse": 5.890760520696383,
+        "mae": 4.030104529616724,
+        "r2": 0.9104479439781072,
+        "refit_time": 0.00180816650390625,
+        "grid_time": 0.10039574999245815,
+        "predict_time": 0.002899416984291747,
+        "best_params": {
+          "n_neighbors": 5
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.0,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.0011,
+              0.0008,
+              0.0008
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "fit_curve": {
+              "a": 0.0033122031332862593,
+              "exponent": -0.225,
+              "offset": 0.0
+            },
+            "predict_row_exponent": -0.151,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 6,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 0.13813409896102072,
+            "serial_seconds": 0.010191211339384876,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.0,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 4.24,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_neighbors": 100
+            }
+          }
+        }
+      },
+      "4": {
+        "mse": 30.641002532299737,
+        "rmse": 5.53543155790944,
+        "mae": 3.9557131782945745,
+        "r2": 0.9184916184557451,
+        "refit_time": 0.00209808349609375,
+        "grid_time": 0.10254416699171998,
+        "predict_time": 0.0027232919819653034,
+        "best_params": {
+          "n_neighbors": 3
+        },
+        "n_train": 2583,
+        "n_test": 860,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.0,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.0013,
+              0.0009,
+              0.0011
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "fit_curve": {
+              "a": 0.0019116498159942531,
+              "exponent": -0.094,
+              "offset": 0.0
+            },
+            "predict_row_exponent": -0.251,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 6,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 0.16813313446151976,
+            "serial_seconds": 0.011812281881141817,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.0,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 4.32,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_neighbors": 100
+            }
+          }
+        }
+      }
+    },
+    "MLP": {
+      "1": {
+        "mse": 28.412795876604296,
+        "rmse": 5.330365454319647,
+        "mae": 3.9145386733140803,
+        "r2": 0.9260956343231453,
+        "refit_time": 0.5627021789550781,
+        "grid_time": 4.064704290998634,
+        "predict_time": 0.0005609589861705899,
+        "best_params": {
+          "alpha": 0.0001,
+          "max_iter": 5000
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.01,
+          "projected_peak_gb": 0.0,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 3,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.1083,
+              0.1926,
+              0.3748
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "fit_curve": {
+              "a": 0.0005814747675080775,
+              "exponent": 1.0,
+              "offset": 0.0
+            },
+            "predict_row_exponent": -0.831,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 3,
+            "grid_workers": 3,
+            "outer_folds": 4,
+            "grid_seconds_serial": 13.398533365552842,
+            "serial_seconds": 1.5019380525256292,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.0,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.97,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "alpha": 0.0001,
+              "max_iter": 5000
+            }
+          }
+        }
+      },
+      "2": {
+        "mse": 31.849271110020453,
+        "rmse": 5.643515846528691,
+        "mae": 3.7657443700299145,
+        "r2": 0.9250642714907119,
+        "refit_time": 0.671159029006958,
+        "grid_time": 4.418849249981577,
+        "predict_time": 0.0005633330147247761,
+        "best_params": {
+          "alpha": 0.01,
+          "max_iter": 5000
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.01,
+          "projected_peak_gb": 0.0,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 3,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.1181,
+              0.1578,
+              0.3652
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "fit_curve": {
+              "a": 1.858312190249768e-05,
+              "exponent": 1.5,
+              "offset": 0.0589
+            },
+            "predict_row_exponent": -1.077,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 3,
+            "grid_workers": 3,
+            "outer_folds": 4,
+            "grid_seconds_serial": 19.52038799012299,
+            "serial_seconds": 2.497380195759451,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.0,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.97,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "alpha": 0.001,
+              "max_iter": 5000
+            }
+          }
+        }
+      },
+      "3": {
+        "mse": 26.31070941205763,
+        "rmse": 5.129396593368233,
+        "mae": 3.790668425286907,
+        "r2": 0.9321006863661818,
+        "refit_time": 0.6304018497467041,
+        "grid_time": 5.455615125014447,
+        "predict_time": 0.0006582080095540732,
+        "best_params": {
+          "alpha": 0.0001,
+          "max_iter": 5000
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.01,
+          "projected_peak_gb": 0.0,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 3,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.1101,
+              0.1663,
+              0.3293
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "fit_curve": {
+              "a": 0.00017408574658133634,
+              "exponent": 1.15,
+              "offset": 0.033
+            },
+            "predict_row_exponent": -0.767,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 3,
+            "grid_workers": 3,
+            "outer_folds": 4,
+            "grid_seconds_serial": 12.953906967345832,
+            "serial_seconds": 1.494211218853646,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.0,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.99,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "alpha": 0.01,
+              "max_iter": 5000
+            }
+          }
+        }
+      },
+      "4": {
+        "mse": 21.061279386657652,
+        "rmse": 4.589256953653571,
+        "mae": 3.3908022717235893,
+        "r2": 0.9439747183778259,
+        "refit_time": 0.9566032886505127,
+        "grid_time": 5.3741375420067925,
+        "predict_time": 0.0006992090202402323,
+        "best_params": {
+          "alpha": 0.01,
+          "max_iter": 5000
+        },
+        "n_train": 2583,
+        "n_test": 860,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.01,
+          "projected_peak_gb": 0.0,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 3,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.1173,
+              0.2562,
+              0.3915
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "fit_curve": {
+              "a": 0.0016346589142553452,
+              "exponent": 0.85,
+              "offset": 0.0
+            },
+            "predict_row_exponent": -1.061,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 3,
+            "grid_workers": 3,
+            "outer_folds": 4,
+            "grid_seconds_serial": 12.05312060214468,
+            "serial_seconds": 1.2997627956512319,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.0,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.96,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "alpha": 0.0001,
+              "max_iter": 5000
+            }
+          }
+        }
+      }
+    },
+    "LOCR": {
+      "1": {
+        "mse": 33.49891154087871,
+        "rmse": 5.78782442208458,
+        "mae": 3.938812277945389,
+        "r2": 0.9128661670943736,
+        "refit_time": 0.0014379024505615234,
+        "grid_time": 2.7487406250147615,
+        "predict_time": 0.45880520800710656,
+        "best_params": {
+          "frac": 0.01
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.0,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 4,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.0006,
+              0.0007,
+              0.0007
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "fit_curve": {
+              "a": 4.324732541335971e-05,
+              "exponent": 0.25,
+              "offset": 0.0005
+            },
+            "predict_row_exponent": -0.477,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 4,
+            "grid_workers": 4,
+            "outer_folds": 4,
+            "grid_seconds_serial": 1.2627571731941698,
+            "serial_seconds": 0.11889044888563022,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.0,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 3.08,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "frac": 0.01
+            }
+          }
+        }
+      },
+      "2": {
+        "mse": 33.88778118051724,
+        "rmse": 5.821321257284916,
+        "mae": 3.813651224062872,
+        "r2": 0.920268016132826,
+        "refit_time": 0.0012333393096923828,
+        "grid_time": 2.6350003750121687,
+        "predict_time": 0.4738390840066131,
+        "best_params": {
+          "frac": 0.01
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.0,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 4,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.0006,
+              0.0006,
+              0.0008
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "fit_curve": {
+              "a": 3.178299459765153e-07,
+              "exponent": 1.0,
+              "offset": 0.0005
+            },
+            "predict_row_exponent": 1.0,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 4,
+            "grid_workers": 4,
+            "outer_folds": 4,
+            "grid_seconds_serial": 4.775611116736942,
+            "serial_seconds": 0.5352607927775147,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.0,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 3.55,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "frac": 0.01
+            }
+          }
+        }
+      },
+      "3": {
+        "mse": 25.007292039929315,
+        "rmse": 5.000729150826839,
+        "mae": 3.6045137213675664,
+        "r2": 0.93546437920927,
+        "refit_time": 0.0037941932678222656,
+        "grid_time": 9.905350207991432,
+        "predict_time": 1.3697557499981485,
+        "best_params": {
+          "frac": 0.01
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.0,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 4,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.001,
+              0.0018,
+              0.0019
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "fit_curve": {
+              "a": 0.00014907800987366167,
+              "exponent": 0.4,
+              "offset": 0.0
+            },
+            "predict_row_exponent": 0.4,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 4,
+            "grid_workers": 4,
+            "outer_folds": 4,
+            "grid_seconds_serial": 12.964943877500168,
+            "serial_seconds": 1.237067361057425,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.0,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 3.91,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "frac": 0.01
+            }
+          }
+        }
+      },
+      "4": {
+        "mse": 22.646257559611275,
+        "rmse": 4.758808418040306,
+        "mae": 3.522461270369107,
+        "r2": 0.9397585049714846,
+        "refit_time": 0.0013301372528076172,
+        "grid_time": 3.1541427499905694,
+        "predict_time": 0.540291375014931,
+        "best_params": {
+          "frac": 0.01
+        },
+        "n_train": 2583,
+        "n_test": 860,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.0,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 4,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.0007,
+              0.0008,
+              0.0009
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "fit_curve": {
+              "a": 0.00010917724427439535,
+              "exponent": 0.25,
+              "offset": 0.0003
+            },
+            "predict_row_exponent": 0.25,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 4,
+            "grid_workers": 4,
+            "outer_folds": 4,
+            "grid_seconds_serial": 5.076288255966675,
+            "serial_seconds": 0.45800931589209326,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.0,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 3.95,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "frac": 0.05
+            }
+          }
+        }
+      }
+    },
+    "GPR": {
+      "1": {
+        "mse": 32.52407848353281,
+        "rmse": 5.702988557198131,
+        "mae": 4.117472516985109,
+        "r2": 0.9154017999499667,
+        "refit_time": 0.1996619701385498,
+        "grid_time": 0.6091801660077181,
+        "predict_time": 0.01403787502204068,
+        "best_params": {
+          "alpha": 0.1,
+          "random_state": 16252329
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.2,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 3,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.0017,
+              0.003,
+              0.008
+            ],
+            "peak_gb": [
+              0.0,
+              0.0003,
+              0.0113
+            ],
+            "fit_curve": {
+              "a": 2.3724843566195013e-07,
+              "exponent": 1.6,
+              "offset": 0.0005
+            },
+            "predict_row_exponent": 1.0,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 3,
+            "grid_workers": 3,
+            "outer_folds": 4,
+            "grid_seconds_serial": 0.5300337795215152,
+            "serial_seconds": 0.08144069126762289,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.04507886309956395,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.58,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "alpha": 0.1,
+              "random_state": 16252329
+            }
+          }
+        }
+      },
+      "2": {
+        "mse": 31.175097008483082,
+        "rmse": 5.583466397184019,
+        "mae": 3.8542398337368136,
+        "r2": 0.9266504844770713,
+        "refit_time": 0.15915513038635254,
+        "grid_time": 0.6251444589870516,
+        "predict_time": 0.013793958991300315,
+        "best_params": {
+          "alpha": 0.1,
+          "random_state": 16252329
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.11,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 3,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.002,
+              0.0025,
+              0.0068
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0064
+            ],
+            "fit_curve": {
+              "a": 6.881375409287705e-08,
+              "exponent": 1.75,
+              "offset": 0.0011
+            },
+            "predict_row_exponent": -0.033,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 3,
+            "grid_workers": 3,
+            "outer_folds": 4,
+            "grid_seconds_serial": 0.3835757580002255,
+            "serial_seconds": 0.0693530735561028,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.025532472595687986,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.23,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "alpha": 0.1,
+              "random_state": 16252329
+            }
+          }
+        }
+      },
+      "3": {
+        "mse": 27.7182420646552,
+        "rmse": 5.264811683683966,
+        "mae": 3.863969276378608,
+        "r2": 0.9284683061239082,
+        "refit_time": 0.4760923385620117,
+        "grid_time": 3.3347852079896256,
+        "predict_time": 0.04506395902717486,
+        "best_params": {
+          "alpha": 0.1,
+          "random_state": 16252329
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.11,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 3,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.0049,
+              0.0069,
+              0.021
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0064
+            ],
+            "fit_curve": {
+              "a": 4.343814300528752e-08,
+              "exponent": 2.0,
+              "offset": 0.0028
+            },
+            "predict_row_exponent": 1.0,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 3,
+            "grid_workers": 3,
+            "outer_folds": 4,
+            "grid_seconds_serial": 1.866336634613376,
+            "serial_seconds": 0.3108886147279734,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.02547139012536337,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.62,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "alpha": 0.1,
+              "random_state": 16252329
+            }
+          }
+        }
+      },
+      "4": {
+        "mse": 22.82839066464194,
+        "rmse": 4.777906514849567,
+        "mae": 3.6243257444426087,
+        "r2": 0.9392740112085592,
+        "refit_time": 0.19776511192321777,
+        "grid_time": 0.7096586669795215,
+        "predict_time": 0.03603204200044274,
+        "best_params": {
+          "alpha": 0.1,
+          "random_state": 16252329
+        },
+        "n_train": 2583,
+        "n_test": 860,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.13,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 3,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.002,
+              0.0029,
+              0.0085
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0075
+            ],
+            "fit_curve": {
+              "a": 3.3780636605563316e-08,
+              "exponent": 1.9,
+              "offset": 0.0011
+            },
+            "predict_row_exponent": 1.0,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 3,
+            "grid_workers": 3,
+            "outer_folds": 4,
+            "grid_seconds_serial": 0.6527223023042232,
+            "serial_seconds": 0.11627897074672452,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.029880896279978194,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.39,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "alpha": 0.1,
+              "random_state": 16252329
+            }
+          }
+        }
+      }
+    },
+    "XGB": {
+      "1": {
+        "mse": 20.207027585571897,
+        "rmse": 4.495222751496515,
+        "mae": 3.2412320348582337,
+        "r2": 0.9474396126867584,
+        "refit_time": 0.04351997375488281,
+        "grid_time": 2.2118401670013554,
+        "predict_time": 0.0013532919983845204,
+        "best_params": {
+          "learning_rate": 0.1,
+          "max_depth": 6,
+          "n_estimators": 100,
+          "random_state": 16252329,
+          "verbosity": 0
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.27,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.0613,
+              0.1067,
+              0.1457
+            ],
+            "peak_gb": [
+              0.003,
+              0.0031,
+              0.0075
+            ],
+            "fit_curve": {
+              "a": 0.00222603103453689,
+              "exponent": 0.65,
+              "offset": 0.0
+            },
+            "predict_row_exponent": -0.519,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 8,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 5.627678474278496,
+            "serial_seconds": 0.3708635791448346,
+            "fixed_gb": 0.0029754638671875,
+            "grows_gb": 0.03543777465820312,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 4.57,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_estimators": 200,
+              "learning_rate": 0.01,
+              "max_depth": 8,
+              "random_state": 16252329,
+              "verbosity": 0
+            }
+          }
+        }
+      },
+      "2": {
+        "mse": 25.849851139974223,
+        "rmse": 5.084274888317332,
+        "mae": 3.3135797221929217,
+        "r2": 0.9391798506050842,
+        "refit_time": 0.04218792915344238,
+        "grid_time": 2.1501175830198918,
+        "predict_time": 0.0013784170150756836,
+        "best_params": {
+          "learning_rate": 0.1,
+          "max_depth": 6,
+          "n_estimators": 100,
+          "random_state": 16252329,
+          "verbosity": 0
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.2,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.0652,
+              0.1009,
+              0.1391
+            ],
+            "peak_gb": [
+              0.0,
+              0.0033,
+              0.0061
+            ],
+            "fit_curve": {
+              "a": 0.0029114486997289255,
+              "exponent": 0.6,
+              "offset": 0.0003
+            },
+            "predict_row_exponent": -0.678,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 8,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 5.243223910796918,
+            "serial_seconds": 0.3272140864163396,
+            "fixed_gb": 4.57763671875e-05,
+            "grows_gb": 0.026627534664935944,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 4.76,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_estimators": 200,
+              "learning_rate": 0.01,
+              "max_depth": 8,
+              "random_state": 16252329,
+              "verbosity": 0
+            }
+          }
+        }
+      },
+      "3": {
+        "mse": 17.43443451373649,
+        "rmse": 4.175456204265169,
+        "mae": 3.046195411637824,
+        "r2": 0.9550074413222034,
+        "refit_time": 0.12530994415283203,
+        "grid_time": 7.25581366600818,
+        "predict_time": 0.0038762920012231916,
+        "best_params": {
+          "learning_rate": 0.1,
+          "max_depth": 6,
+          "n_estimators": 100,
+          "random_state": 16252329,
+          "verbosity": 0
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.42,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.1897,
+              0.1153,
+              0.1586
+            ],
+            "peak_gb": [
+              0.0047,
+              0.0045,
+              0.0069
+            ],
+            "fit_curve": {
+              "a": 0.2846346803779682,
+              "exponent": -0.108,
+              "offset": 0.0
+            },
+            "predict_row_exponent": -1.24,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 8,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 2.7457524084064695,
+            "serial_seconds": 0.12297108555331135,
+            "fixed_gb": 0.0045013427734375,
+            "grows_gb": 0.05577789306640625,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 5.41,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_estimators": 200,
+              "learning_rate": 0.01,
+              "max_depth": 8,
+              "random_state": 16252329,
+              "verbosity": 0
+            }
+          }
+        }
+      },
+      "4": {
+        "mse": 15.078250179962506,
+        "rmse": 3.8830722604611037,
+        "mae": 2.8947737380626593,
+        "r2": 0.9598902233243648,
+        "refit_time": 0.0498812198638916,
+        "grid_time": 2.5949401250109076,
+        "predict_time": 0.001547042018501088,
+        "best_params": {
+          "learning_rate": 0.1,
+          "max_depth": 6,
+          "n_estimators": 100,
+          "random_state": 16252329,
+          "verbosity": 0
+        },
+        "n_train": 2583,
+        "n_test": 860,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.15,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.072,
+              0.1175,
+              0.16
+            ],
+            "peak_gb": [
+              0.0015,
+              0.0026,
+              0.0033
+            ],
+            "fit_curve": {
+              "a": 0.0033524392422218195,
+              "exponent": 0.6,
+              "offset": 0.0
+            },
+            "predict_row_exponent": -0.671,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 8,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 5.970323818417438,
+            "serial_seconds": 0.3766567118006207,
+            "fixed_gb": 0.00146484375,
+            "grows_gb": 0.019343500551970108,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 4.71,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_estimators": 200,
+              "learning_rate": 0.01,
+              "max_depth": 8,
+              "random_state": 16252329,
+              "verbosity": 0
+            }
+          }
+        }
+      }
+    },
+    "LGBM": {
+      "1": {
+        "mse": 20.121644244777652,
+        "rmse": 4.485715577784402,
+        "mae": 3.2561510258141095,
+        "r2": 0.9476617028206605,
+        "refit_time": 0.040112972259521484,
+        "grid_time": 0.5717705829883926,
+        "predict_time": 0.005204584012972191,
+        "best_params": {
+          "learning_rate": 0.1,
+          "max_depth": 8,
+          "n_estimators": 100,
+          "num_leaves": 255,
+          "random_state": 16252329,
+          "verbose": -1
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.13,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.0058,
+              0.0087,
+              0.0184
+            ],
+            "peak_gb": [
+              0.0,
+              0.0009,
+              0.0043
+            ],
+            "fit_curve": {
+              "a": 3.593632637864249e-06,
+              "exponent": 1.3,
+              "offset": 0.0022
+            },
+            "predict_row_exponent": -0.378,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 8,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 1.7816493659104498,
+            "serial_seconds": 0.10384858704899314,
+            "fixed_gb": 1.52587890625e-05,
+            "grows_gb": 0.01702675043150436,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 6.13,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_estimators": 100,
+              "learning_rate": 0.01,
+              "max_depth": 6,
+              "num_leaves": 255,
+              "random_state": 16252329,
+              "verbose": -1
+            }
+          }
+        }
+      },
+      "2": {
+        "mse": 26.542606946150396,
+        "rmse": 5.151951760852424,
+        "mae": 3.3154897971693242,
+        "r2": 0.9375499181386386,
+        "refit_time": 0.0439298152923584,
+        "grid_time": 0.5421444170060568,
+        "predict_time": 0.006154790986329317,
+        "best_params": {
+          "learning_rate": 0.1,
+          "max_depth": 6,
+          "n_estimators": 200,
+          "num_leaves": 255,
+          "random_state": 16252329,
+          "verbose": -1
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.1,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.0111,
+              0.0146,
+              0.0205
+            ],
+            "peak_gb": [
+              0.0005,
+              0.0003,
+              0.0033
+            ],
+            "fit_curve": {
+              "a": 0.0005569411050629516,
+              "exponent": 0.55,
+              "offset": 0.001
+            },
+            "predict_row_exponent": -0.505,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 8,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 0.962813966189892,
+            "serial_seconds": 0.046804926262153934,
+            "fixed_gb": 0.0002593994140625,
+            "grows_gb": 0.013056579116703005,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 5.99,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_estimators": 200,
+              "learning_rate": 0.1,
+              "max_depth": 6,
+              "num_leaves": 255,
+              "random_state": 16252329,
+              "verbose": -1
+            }
+          }
+        }
+      },
+      "3": {
+        "mse": 17.68025545226908,
+        "rmse": 4.2047895847793715,
+        "mae": 3.07802507106804,
+        "r2": 0.9543730580852567,
+        "refit_time": 0.08505582809448242,
+        "grid_time": 0.8389967090042774,
+        "predict_time": 0.014742083003511652,
+        "best_params": {
+          "learning_rate": 0.1,
+          "max_depth": 8,
+          "n_estimators": 200,
+          "num_leaves": 255,
+          "random_state": 16252329,
+          "verbose": -1
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.1,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.0325,
+              0.0386,
+              0.0311
+            ],
+            "peak_gb": [
+              0.0008,
+              0.0,
+              0.0034
+            ],
+            "fit_curve": {
+              "a": 0.047065370176644805,
+              "exponent": -0.056,
+              "offset": 0.0
+            },
+            "predict_row_exponent": -1.121,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 8,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 0.8514776914909508,
+            "serial_seconds": 0.032906874061863496,
+            "fixed_gb": 1.52587890625e-05,
+            "grows_gb": 0.013789379504299905,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 6.36,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_estimators": 200,
+              "learning_rate": 0.1,
+              "max_depth": 8,
+              "num_leaves": 255,
+              "random_state": 16252329,
+              "verbose": -1
+            }
+          }
+        }
+      },
+      "4": {
+        "mse": 15.220990991575704,
+        "rmse": 3.901408847016127,
+        "mae": 2.887617891284505,
+        "r2": 0.9595105173234714,
+        "refit_time": 0.045999765396118164,
+        "grid_time": 0.6179249580018222,
+        "predict_time": 0.028583790990523994,
+        "best_params": {
+          "learning_rate": 0.1,
+          "max_depth": 8,
+          "n_estimators": 100,
+          "num_leaves": 255,
+          "random_state": 16252329,
+          "verbose": -1
+        },
+        "n_train": 2583,
+        "n_test": 860,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.14,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.0121,
+              0.0189,
+              0.0351
+            ],
+            "peak_gb": [
+              0.0002,
+              0.0,
+              0.0046
+            ],
+            "fit_curve": {
+              "a": 0.00010393133287396817,
+              "exponent": 0.9,
+              "offset": 0.0
+            },
+            "predict_row_exponent": -0.186,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 8,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 2.1057899617697524,
+            "serial_seconds": 0.13057725824885996,
+            "fixed_gb": 4.57763671875e-05,
+            "grows_gb": 0.018224955714026162,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 5.21,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_estimators": 200,
+              "learning_rate": 0.01,
+              "max_depth": 6,
+              "num_leaves": 255,
+              "random_state": 16252329,
+              "verbose": -1
+            }
+          }
+        }
+      }
+    },
+    "MAG": {
+      "1": {
+        "mse": 353.1172205763605,
+        "rmse": 18.791413480000926,
+        "mae": 15.169966427031374,
+        "r2": 0.0815087571948997,
+        "refit_time": 0.008911848068237305,
+        "grid_time": 1.7344747500028461,
+        "predict_time": 0.0003877920098602772,
+        "best_params": {
+          "random_state": 16252329
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.0,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 3,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.0027,
+              0.0023,
+              0.0024
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "fit_curve": {
+              "a": 0.004428591486796512,
+              "exponent": -0.103,
+              "offset": 0.0
+            },
+            "predict_row_exponent": -1.497,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 3,
+            "grid_workers": 3,
+            "outer_folds": 4,
+            "grid_seconds_serial": 0.014175325235180726,
+            "serial_seconds": 0.002060947646835699,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.0,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 1.66,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "frac": 0.1,
+              "random_state": 16252329
+            }
+          }
+        }
+      },
+      "2": {
+        "mse": 377.6496179883273,
+        "rmse": 19.433209153105086,
+        "mae": 15.712760797597145,
+        "r2": 0.11145692636256121,
+        "refit_time": 0.003362894058227539,
+        "grid_time": 0.018935500003863126,
+        "predict_time": 0.00023275002604350448,
+        "best_params": {
+          "random_state": 16252329
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.0,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 3,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.0022,
+              0.0026,
+              0.0023
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "fit_curve": {
+              "a": 4.623216101228888e-05,
+              "exponent": 0.25,
+              "offset": 0.0022
+            },
+            "predict_row_exponent": -0.969,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 3,
+            "grid_workers": 3,
+            "outer_folds": 4,
+            "grid_seconds_serial": 0.021380995881606458,
+            "serial_seconds": 0.0027030801272409583,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.0,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.0,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "frac": 0.1,
+              "random_state": 16252329
+            }
+          }
+        }
+      },
+      "3": {
+        "mse": 349.2611830605606,
+        "rmse": 18.68853078924506,
+        "mae": 14.990159260203328,
+        "r2": 0.0986714102859011,
+        "refit_time": 0.003281831741333008,
+        "grid_time": 0.028609625005628914,
+        "predict_time": 0.0002519169938750565,
+        "best_params": {
+          "random_state": 16252329
+        },
+        "n_train": 2582,
+        "n_test": 861,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.0,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 3,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.0071,
+              0.0026,
+              0.0028
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "fit_curve": {
+              "a": 0.27886578703510434,
+              "exponent": -0.739,
+              "offset": 0.0
+            },
+            "predict_row_exponent": -1.931,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 3,
+            "grid_workers": 3,
+            "outer_folds": 4,
+            "grid_seconds_serial": 0.009541917405343589,
+            "serial_seconds": 0.0008913832232152467,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.0,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.16,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "frac": 0.1,
+              "random_state": 16252329
+            }
+          }
+        }
+      },
+      "4": {
+        "mse": 342.8983990208082,
+        "rmse": 18.517516005685216,
+        "mae": 15.060098415903383,
+        "r2": 0.08785316313197988,
+        "refit_time": 0.004359006881713867,
+        "grid_time": 0.07093191600870341,
+        "predict_time": 0.0002429590094834566,
+        "best_params": {
+          "random_state": 16252329
+        },
+        "n_train": 2583,
+        "n_test": 860,
+        "n_features": 5,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.0,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 3,
+          "probe": {
+            "sizes": [
+              200,
+              322,
+              645
+            ],
+            "fit_seconds": [
+              0.003,
+              0.003,
+              0.0031
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "fit_curve": {
+              "a": 2.401054868863353e-07,
+              "exponent": 1.0,
+              "offset": 0.0029
+            },
+            "predict_row_exponent": -0.977,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 4.0,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 3,
+            "grid_workers": 3,
+            "outer_folds": 4,
+            "grid_seconds_serial": 0.030605061491781944,
+            "serial_seconds": 0.003824938489693333,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.0,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.09,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "frac": 0.1,
+              "random_state": 16252329
+            }
+          }
+        }
+      }
+    }
+  },
+  "LESS-A": {
+    "1": 23.114746762112343,
+    "2": 28.172349423014058,
+    "3": 21.401874889553042,
+    "4": 17.461589796200347
+  },
+  "TSK": {
+    "1": 22.700659419643994,
+    "2": 26.61866684012713,
+    "3": 20.484369972570633,
+    "4": 17.80710126556493
+  },
+  "RF": {
+    "1": 23.37143304131216,
+    "2": 29.42698743265867,
+    "3": 20.014716923280524,
+    "4": 16.269445629887166
+  },
+  "KNN": {
+    "1": 35.840961904761905,
+    "2": 38.778205519163755,
+    "3": 34.70105951219512,
+    "4": 30.641002532299737
+  },
+  "MLP": {
+    "1": 28.412795876604296,
+    "2": 31.849271110020453,
+    "3": 26.31070941205763,
+    "4": 21.061279386657652
+  },
+  "LOCR": {
+    "1": 33.49891154087871,
+    "2": 33.88778118051724,
+    "3": 25.007292039929315,
+    "4": 22.646257559611275
+  },
+  "GPR": {
+    "1": 32.52407848353281,
+    "2": 31.175097008483082,
+    "3": 27.7182420646552,
+    "4": 22.82839066464194
+  },
+  "XGB": {
+    "1": 20.207027585571897,
+    "2": 25.849851139974223,
+    "3": 17.43443451373649,
+    "4": 15.078250179962506
+  },
+  "LGBM": {
+    "1": 20.121644244777652,
+    "2": 26.542606946150396,
+    "3": 17.68025545226908,
+    "4": 15.220990991575704
+  },
+  "ANFIS": {
+    "1": 74.74778111341291,
+    "2": 76.65350877341922,
+    "3": 71.00545441751888,
+    "4": 74.31863291725848
+  },
+  "_best_params": {
+    "ANFIS": {
+      "1": {
+        "hybrid": true,
+        "epoch": 50
+      },
+      "2": {
+        "hybrid": true,
+        "epoch": 50
+      },
+      "3": {
+        "hybrid": true,
+        "epoch": 50
+      },
+      "4": {
+        "hybrid": true,
+        "epoch": 25
+      }
+    }
+  },
+  "_superseded": {
+    "MAG_random_partition": {
+      "1": 195.5876751010009,
+      "2": 213.94411076833296,
+      "3": 195.64630267878672,
+      "4": 201.55082974965856
+    }
+  },
+  "_mag_environment": {
+    "groups": 4
+  },
+  "MAG": {
+    "1": 353.1172205763605,
+    "2": 377.6496179883273,
+    "3": 349.2611830605606,
+    "4": 342.8983990208082
+  }
+}

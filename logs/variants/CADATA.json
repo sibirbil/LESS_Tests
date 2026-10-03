@@ -1,0 +1,196 @@
+{
+  "AV-NoV-NoC": {
+    "1": 3316948736.0,
+    "2": 3204473088.0,
+    "3": 3070292224.0,
+    "4": 3309760768.0
+  },
+  "_best_params": {
+    "AV-NoV-NoC": {
+      "1": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      },
+      "2": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      },
+      "3": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 100
+      },
+      "4": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      }
+    },
+    "AV-NoV-C": {
+      "1": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      },
+      "2": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      },
+      "3": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      },
+      "4": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      }
+    },
+    "AV-V-NoC": {
+      "1": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      },
+      "2": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      },
+      "3": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 100
+      },
+      "4": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      }
+    },
+    "AV-V-C": {
+      "1": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      },
+      "2": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      },
+      "3": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      },
+      "4": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      }
+    },
+    "GB-NoV-NoC": {
+      "1": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 100
+      },
+      "2": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      },
+      "3": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      },
+      "4": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      }
+    },
+    "GB-NoV-C": {
+      "1": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      },
+      "2": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      },
+      "3": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      },
+      "4": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      }
+    },
+    "GB-V-NoC": {
+      "1": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 100
+      },
+      "2": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 100
+      },
+      "3": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      },
+      "4": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 100
+      }
+    },
+    "GB-V-C": {
+      "1": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      },
+      "2": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      },
+      "3": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      },
+      "4": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 100
+      }
+    }
+  },
+  "AV-V-NoC": {
+    "1": 3390713856.0,
+    "2": 3264131840.0,
+    "3": 3118133504.0,
+    "4": 3369129216.0
+  },
+  "GB-NoV-NoC": {
+    "1": 2548030720.0,
+    "2": 2418606080.0,
+    "3": 2349601536.0,
+    "4": 2485648128.0
+  },
+  "GB-V-NoC": {
+    "1": 2690902784.0,
+    "2": 2567607296.0,
+    "3": 2458241280.0,
+    "4": 2655563776.0
+  },
+  "AV-NoV-C": {
+    "1": 3334794752.0,
+    "2": 3232819456.0,
+    "3": 3094898944.0,
+    "4": 3333574400.0
+  },
+  "AV-V-C": {
+    "1": 3383844864.0,
+    "2": 3243826688.0,
+    "3": 3124992256.0,
+    "4": 3361739520.0
+  },
+  "GB-NoV-C": {
+    "1": 2490077696.0,
+    "2": 2509287424.0,
+    "3": 2342833664.0,
+    "4": 2517084928.0
+  },
+  "GB-V-C": {
+    "1": 2606830592.0,
+    "2": 2579208704.0,
+    "3": 2478481664.0,
+    "4": 2668981760.0
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "AV-D": {
+    "1": 4735941632.0,
+    "2": 4527159808.0,
+    "3": 4304881152.0,
+    "4": 4468015104.0
+  },
+  "_best_params": {
+    "AV-D": {
+      "1": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 20
+      },
+      "2": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 20
+      },
+      "3": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 20
+      },
+      "4": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 20
+      }
+    },
+    "AV-TL": {
+      "1": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 20
+      },
+      "2": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 20
+      },
+      "3": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 20
+      },
+      "4": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 20
+      }
+    },
+    "AV-LXGB": {
+      "1": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 20
+      },
+      "2": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 20
+      },
+      "3": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 20
+      },
+      "4": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 20
+      }
+    },
+    "AV-TXGB": {
+      "1": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 10
+      },
+      "2": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 10
+      },
+      "3": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 10
+      },
+      "4": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 10
+      }
+    },
+    "B-D": {
+      "1": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 20
+      },
+      "2": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 20
+      },
+      "3": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 20
+      },
+      "4": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 20
+      }
+    },
+    "B-TL": {
+      "1": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 10
+      },
+      "2": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 10
+      },
+      "3": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 10
+      },
+      "4": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 10
+      }
+    },
+    "B-LXGB": {
+      "1": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 20
+      },
+      "2": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 20
+      },
+      "3": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 20
+      },
+      "4": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 20
+      }
+    },
+    "B-TXGB": {
+      "1": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 10
+      },
+      "2": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 10
+      },
+      "3": {
+        "kernel_coeff": 0.01,
+        "n_subsets": 10
+      },
+      "4": {
+        "kernel_coeff": 0.1,
+        "n_subsets": 10
+      }
+    }
+  },
+  "AV-TL": {
+    "1": 3124751104.0,
+    "2": 3012391680.0,
+    "3": 2876589824.0,
+    "4": 3094804992.0
+  },
+  "AV-LXGB": {
+    "1": 3564633344.0,
+    "2": 3477277952.0,
+    "3": 3313134336.0,
+    "4": 3549689088.0
+  },
+  "AV-TXGB": {
+    "1": 2911151360.0,
+    "2": 2770410240.0,
+    "3": 2664099840.0,
+    "4": 2881365248.0
+  },
+  "B-D": {
+    "1": 3942719232.0,
+    "2": 3863931904.0,
+    "3": 3737222400.0,
+    "4": 3900212480.0
+  },
+  "B-TL": {
+    "1": 2324901376.0,
+    "2": 2240527360.0,
+    "3": 2131141248.0,
+    "4": 2357044736.0
+  },
+  "B-LXGB": {
+    "1": 2692512256.0,
+    "2": 2606841600.0,
+    "3": 2473631488.0,
+    "4": 2646478080.0
+  },
+  "B-TXGB": {
+    "1": 2184510976.0,
+    "2": 2078359296.0,
+    "3": 1957313152.0,
+    "4": 2094381824.0
+  }
+}

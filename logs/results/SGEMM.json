@@ -1,0 +1,1646 @@
+{
+  "KNN": {
+    "1": 15228.758980994506,
+    "2": 14537.480234438639,
+    "3": 14990.018952897097,
+    "4": 16273.375745842899
+  },
+  "LOCR": {
+    "1": 13927.984201528936,
+    "2": 13565.793342758472,
+    "3": 13765.154863053624,
+    "4": 14311.983756369238
+  },
+  "_skipped": {
+    "GPR": {
+      "1": {
+        "reason": "projected peak memory 480.0 GB even with a single grid worker, over the 19 GB cap (probe exponent 1.556)",
+        "projection": {
+          "projected_hours": null,
+          "projected_peak_gb": 479.98,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 1,
+          "probe": {
+            "sizes": [
+              11325,
+              20000
+            ],
+            "fit_seconds": [
+              15.3945,
+              77.9301
+            ],
+            "peak_gb": [
+              4.3024,
+              10.4226
+            ],
+            "fit_curve": {
+              "a": 4.2325590604545815e-11,
+              "exponent": 2.852,
+              "offset": 0.0
+            },
+            "predict_row_exponent": 1.036,
+            "memory_exponent": 1.556,
+            "memory_measurable": true,
+            "extrapolation_factor": 9.1,
+            "probe_timed_out_at": null,
+            "n_candidates": 3,
+            "grid_workers": 3,
+            "outer_folds": 4,
+            "grid_seconds_serial": 216515.05028724435,
+            "serial_seconds": 41926.59011865322,
+            "fixed_gb": 4.3023681640625,
+            "grows_gb": 317.1196429040842,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.93,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "alpha": 0.1,
+              "random_state": 16252329
+            }
+          }
+        }
+      },
+      "2": {
+        "reason": "projected peak memory 480.0 GB even with a single grid worker, over the 19 GB cap (probe exponent 1.556)",
+        "projection": {
+          "projected_hours": null,
+          "projected_peak_gb": 479.98,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 1,
+          "probe": {
+            "sizes": [
+              11325,
+              20000
+            ],
+            "fit_seconds": [
+              15.3945,
+              77.9301
+            ],
+            "peak_gb": [
+              4.3024,
+              10.4226
+            ],
+            "fit_curve": {
+              "a": 4.2325590604545815e-11,
+              "exponent": 2.852,
+              "offset": 0.0
+            },
+            "predict_row_exponent": 1.036,
+            "memory_exponent": 1.556,
+            "memory_measurable": true,
+            "extrapolation_factor": 9.1,
+            "probe_timed_out_at": null,
+            "n_candidates": 3,
+            "grid_workers": 3,
+            "outer_folds": 4,
+            "grid_seconds_serial": 216515.05028724435,
+            "serial_seconds": 41926.59011865322,
+            "fixed_gb": 4.3023681640625,
+            "grows_gb": 317.1196429040842,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.93,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "alpha": 0.1,
+              "random_state": 16252329
+            }
+          }
+        }
+      },
+      "3": {
+        "reason": "projected peak memory 480.0 GB even with a single grid worker, over the 19 GB cap (probe exponent 1.556)",
+        "projection": {
+          "projected_hours": null,
+          "projected_peak_gb": 479.98,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 1,
+          "probe": {
+            "sizes": [
+              11325,
+              20000
+            ],
+            "fit_seconds": [
+              15.3945,
+              77.9301
+            ],
+            "peak_gb": [
+              4.3024,
+              10.4226
+            ],
+            "fit_curve": {
+              "a": 4.2325590604545815e-11,
+              "exponent": 2.852,
+              "offset": 0.0
+            },
+            "predict_row_exponent": 1.036,
+            "memory_exponent": 1.556,
+            "memory_measurable": true,
+            "extrapolation_factor": 9.1,
+            "probe_timed_out_at": null,
+            "n_candidates": 3,
+            "grid_workers": 3,
+            "outer_folds": 4,
+            "grid_seconds_serial": 216515.05028724435,
+            "serial_seconds": 41926.59011865322,
+            "fixed_gb": 4.3023681640625,
+            "grows_gb": 317.1196429040842,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.93,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "alpha": 0.1,
+              "random_state": 16252329
+            }
+          }
+        }
+      },
+      "4": {
+        "reason": "projected peak memory 480.0 GB even with a single grid worker, over the 19 GB cap (probe exponent 1.556)",
+        "projection": {
+          "projected_hours": null,
+          "projected_peak_gb": 479.98,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 1,
+          "probe": {
+            "sizes": [
+              11325,
+              20000
+            ],
+            "fit_seconds": [
+              15.3945,
+              77.9301
+            ],
+            "peak_gb": [
+              4.3024,
+              10.4226
+            ],
+            "fit_curve": {
+              "a": 4.2325590604545815e-11,
+              "exponent": 2.852,
+              "offset": 0.0
+            },
+            "predict_row_exponent": 1.036,
+            "memory_exponent": 1.556,
+            "memory_measurable": true,
+            "extrapolation_factor": 9.1,
+            "probe_timed_out_at": null,
+            "n_candidates": 3,
+            "grid_workers": 3,
+            "outer_folds": 4,
+            "grid_seconds_serial": 216515.05028724435,
+            "serial_seconds": 41926.59011865322,
+            "fixed_gb": 4.3023681640625,
+            "grows_gb": 317.1196429040842,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.93,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "alpha": 0.1,
+              "random_state": 16252329
+            }
+          }
+        }
+      }
+    },
+    "TSK": {
+      "1": {
+        "reason": "not attempted: tsk fits one fuzzy rule set per candidate and the cost fitted on 66 measured points from this suite (t = 2.03e-03 n^1.19 p^0.46 s/fold, median relative error 35%) projects 14 h over four folds. The one cell that was attempted under this law, ctslices, ran 12 h for two folds against a projection of 8 h, so the law understates the cost rather than overstating it.",
+        "projection": {
+          "projected_hours": 14.5,
+          "budget_hours": 20.0,
+          "law": {
+            "a": 0.002033164508707316,
+            "n_exponent": 1.1947462338234265,
+            "p_exponent": 0.45733161414072776,
+            "points": 66,
+            "median_rel_error": 0.3470177737653731
+          },
+          "n_train": 181200,
+          "n_features": 14
+        }
+      },
+      "2": {
+        "reason": "not attempted: tsk fits one fuzzy rule set per candidate and the cost fitted on 66 measured points from this suite (t = 2.03e-03 n^1.19 p^0.46 s/fold, median relative error 35%) projects 14 h over four folds. The one cell that was attempted under this law, ctslices, ran 12 h for two folds against a projection of 8 h, so the law understates the cost rather than overstating it.",
+        "projection": {
+          "projected_hours": 14.5,
+          "budget_hours": 20.0,
+          "law": {
+            "a": 0.002033164508707316,
+            "n_exponent": 1.1947462338234265,
+            "p_exponent": 0.45733161414072776,
+            "points": 66,
+            "median_rel_error": 0.3470177737653731
+          },
+          "n_train": 181200,
+          "n_features": 14
+        }
+      },
+      "3": {
+        "reason": "not attempted: tsk fits one fuzzy rule set per candidate and the cost fitted on 66 measured points from this suite (t = 2.03e-03 n^1.19 p^0.46 s/fold, median relative error 35%) projects 14 h over four folds. The one cell that was attempted under this law, ctslices, ran 12 h for two folds against a projection of 8 h, so the law understates the cost rather than overstating it.",
+        "projection": {
+          "projected_hours": 14.5,
+          "budget_hours": 20.0,
+          "law": {
+            "a": 0.002033164508707316,
+            "n_exponent": 1.1947462338234265,
+            "p_exponent": 0.45733161414072776,
+            "points": 66,
+            "median_rel_error": 0.3470177737653731
+          },
+          "n_train": 181200,
+          "n_features": 14
+        }
+      },
+      "4": {
+        "reason": "not attempted: tsk fits one fuzzy rule set per candidate and the cost fitted on 66 measured points from this suite (t = 2.03e-03 n^1.19 p^0.46 s/fold, median relative error 35%) projects 14 h over four folds. The one cell that was attempted under this law, ctslices, ran 12 h for two folds against a projection of 8 h, so the law understates the cost rather than overstating it.",
+        "projection": {
+          "projected_hours": 14.5,
+          "budget_hours": 20.0,
+          "law": {
+            "a": 0.002033164508707316,
+            "n_exponent": 1.1947462338234265,
+            "p_exponent": 0.45733161414072776,
+            "points": 66,
+            "median_rel_error": 0.3470177737653731
+          },
+          "n_train": 181200,
+          "n_features": 14
+        }
+      }
+    },
+    "ANFIS": {
+      "1": {
+        "reason": "not run: 241 600 rows with 2^14 = 16 384 rules. The rule count is within reach in principle -- housing ran at 2^13 -- but the product of rows and rules puts it beyond the memory the other runs need, so the cell is a resource decision, not a structural limit.",
+        "projection": {
+          "rules": "2^14",
+          "n_features": 14,
+          "n": 241600,
+          "reason_kind": "scope: published ANFIS column is four problems"
+        }
+      },
+      "2": {
+        "reason": "ANFIS is reported on the four problems the published Table 1 reports it on. This problem is within reach by rule count -- 2^14 rules, fewer than the 2^13 that housing was run with -- but extending the ANFIS column beyond the published four is outside the scope of this revision, which keeps that column as the paper defines it.",
+        "projection": {
+          "rules": "2^14",
+          "n_features": 14,
+          "n": 241600,
+          "reason_kind": "scope: published ANFIS column is four problems"
+        }
+      },
+      "3": {
+        "reason": "ANFIS is reported on the four problems the published Table 1 reports it on. This problem is within reach by rule count -- 2^14 rules, fewer than the 2^13 that housing was run with -- but extending the ANFIS column beyond the published four is outside the scope of this revision, which keeps that column as the paper defines it.",
+        "projection": {
+          "rules": "2^14",
+          "n_features": 14,
+          "n": 241600,
+          "reason_kind": "scope: published ANFIS column is four problems"
+        }
+      },
+      "4": {
+        "reason": "ANFIS is reported on the four problems the published Table 1 reports it on. This problem is within reach by rule count -- 2^14 rules, fewer than the 2^13 that housing was run with -- but extending the ANFIS column beyond the published four is outside the scope of this revision, which keeps that column as the paper defines it.",
+        "projection": {
+          "rules": "2^14",
+          "n_features": 14,
+          "n": 241600,
+          "reason_kind": "scope: published ANFIS column is four problems"
+        }
+      }
+    }
+  },
+  "XGB": {
+    "1": 348.05418066752185,
+    "2": 344.765621067342,
+    "3": 334.41749485124285,
+    "4": 360.82981565068155
+  },
+  "LESS-B": {
+    "1": 235.43298828321602,
+    "2": 237.24034202730778,
+    "3": 229.57474939317632,
+    "4": 235.41066173739583
+  },
+  "_metrics": {
+    "KNN": {
+      "1": {
+        "mse": 15228.758980994506,
+        "rmse": 123.40485801213218,
+        "mae": 53.267580049668865,
+        "r2": 0.885390442500926,
+        "refit_time": 0.08801984786987305,
+        "grid_time": 48.29969520797022,
+        "predict_time": 2.4614298330270685,
+        "best_params": {
+          "n_neighbors": 3
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.26,
+          "projected_peak_gb": 0.97,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              11325,
+              20000
+            ],
+            "fit_seconds": [
+              0.0044,
+              0.0078
+            ],
+            "peak_gb": [
+              0.0053,
+              0.0147
+            ],
+            "fit_curve": {
+              "a": 3.5670849853199474e-07,
+              "exponent": 1.01,
+              "offset": 0.0
+            },
+            "predict_row_exponent": 0.829,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 9.1,
+            "probe_timed_out_at": null,
+            "n_candidates": 6,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 775.074605190969,
+            "serial_seconds": 80.25992075813335,
+            "fixed_gb": 0.005340576171875,
+            "grows_gb": 0.12806549072265624,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 4.08,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_neighbors": 100
+            }
+          }
+        }
+      },
+      "2": {
+        "mse": 14537.480234438639,
+        "rmse": 120.57147355174291,
+        "mae": 52.26935807119205,
+        "r2": 0.8908147991308597,
+        "refit_time": 0.09540891647338867,
+        "grid_time": 62.22066791699035,
+        "predict_time": 3.012893208011519,
+        "best_params": {
+          "n_neighbors": 3
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.26,
+          "projected_peak_gb": 0.97,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              11325,
+              20000
+            ],
+            "fit_seconds": [
+              0.0044,
+              0.0078
+            ],
+            "peak_gb": [
+              0.0053,
+              0.0147
+            ],
+            "fit_curve": {
+              "a": 3.5670849853199474e-07,
+              "exponent": 1.01,
+              "offset": 0.0
+            },
+            "predict_row_exponent": 0.829,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 9.1,
+            "probe_timed_out_at": null,
+            "n_candidates": 6,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 775.074605190969,
+            "serial_seconds": 80.25992075813335,
+            "fixed_gb": 0.005340576171875,
+            "grows_gb": 0.12806549072265624,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 4.08,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_neighbors": 100
+            }
+          }
+        }
+      },
+      "3": {
+        "mse": 14990.018952897097,
+        "rmse": 122.43373290436381,
+        "mae": 53.29785949227372,
+        "r2": 0.8913100531182752,
+        "refit_time": 0.0955040454864502,
+        "grid_time": 57.97349658299936,
+        "predict_time": 2.9193657499854453,
+        "best_params": {
+          "n_neighbors": 3
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.26,
+          "projected_peak_gb": 0.97,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              11325,
+              20000
+            ],
+            "fit_seconds": [
+              0.0044,
+              0.0078
+            ],
+            "peak_gb": [
+              0.0053,
+              0.0147
+            ],
+            "fit_curve": {
+              "a": 3.5670849853199474e-07,
+              "exponent": 1.01,
+              "offset": 0.0
+            },
+            "predict_row_exponent": 0.829,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 9.1,
+            "probe_timed_out_at": null,
+            "n_candidates": 6,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 775.074605190969,
+            "serial_seconds": 80.25992075813335,
+            "fixed_gb": 0.005340576171875,
+            "grows_gb": 0.12806549072265624,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 4.08,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_neighbors": 100
+            }
+          }
+        }
+      },
+      "4": {
+        "mse": 16273.375745842899,
+        "rmse": 127.5671421089416,
+        "mae": 53.78983189845474,
+        "r2": 0.8837248233270957,
+        "refit_time": 0.08660602569580078,
+        "grid_time": 50.87879262503702,
+        "predict_time": 2.3744150410057046,
+        "best_params": {
+          "n_neighbors": 3
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.26,
+          "projected_peak_gb": 0.97,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 5,
+          "probe": {
+            "sizes": [
+              11325,
+              20000
+            ],
+            "fit_seconds": [
+              0.0044,
+              0.0078
+            ],
+            "peak_gb": [
+              0.0053,
+              0.0147
+            ],
+            "fit_curve": {
+              "a": 3.5670849853199474e-07,
+              "exponent": 1.01,
+              "offset": 0.0
+            },
+            "predict_row_exponent": 0.829,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 9.1,
+            "probe_timed_out_at": null,
+            "n_candidates": 6,
+            "grid_workers": 5,
+            "outer_folds": 4,
+            "grid_seconds_serial": 775.074605190969,
+            "serial_seconds": 80.25992075813335,
+            "fixed_gb": 0.005340576171875,
+            "grows_gb": 0.12806549072265624,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 4.08,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "n_neighbors": 100
+            }
+          }
+        }
+      }
+    },
+    "LOCR": {
+      "1": {
+        "mse": 13927.984201528936,
+        "rmse": 118.01688100237583,
+        "mae": 70.34993758973759,
+        "r2": 0.8951798956051847,
+        "refit_time": 0.025259017944335938,
+        "grid_time": 7130.786131332978,
+        "predict_time": 2613.956411124964,
+        "best_params": {
+          "frac": 0.01
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 9.98,
+          "projected_peak_gb": 0.42,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 4,
+          "probe": {
+            "sizes": [
+              11325,
+              20000
+            ],
+            "fit_seconds": [
+              0.0016,
+              0.0024
+            ],
+            "peak_gb": [
+              0.0049,
+              0.0082
+            ],
+            "fit_curve": {
+              "a": 1.2319521404112377e-06,
+              "exponent": 0.765,
+              "offset": 0.0
+            },
+            "predict_row_exponent": 0.948,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 9.1,
+            "probe_timed_out_at": null,
+            "n_candidates": 4,
+            "grid_workers": 4,
+            "outer_folds": 4,
+            "grid_seconds_serial": 24852.164596774102,
+            "serial_seconds": 2766.6989247380907,
+            "fixed_gb": 0.0048675537109375,
+            "grows_gb": 0.06964630126953125,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 3.93,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "frac": 0.2
+            }
+          }
+        }
+      },
+      "2": {
+        "mse": 13565.793342758472,
+        "rmse": 116.47228572823009,
+        "mae": 69.54446996062757,
+        "r2": 0.8981127508211861,
+        "refit_time": 0.04505515098571777,
+        "grid_time": 7512.177944375027,
+        "predict_time": 2800.610316834005,
+        "best_params": {
+          "frac": 0.01
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 9.98,
+          "projected_peak_gb": 0.42,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 4,
+          "probe": {
+            "sizes": [
+              11325,
+              20000
+            ],
+            "fit_seconds": [
+              0.0016,
+              0.0024
+            ],
+            "peak_gb": [
+              0.0049,
+              0.0082
+            ],
+            "fit_curve": {
+              "a": 1.2319521404112377e-06,
+              "exponent": 0.765,
+              "offset": 0.0
+            },
+            "predict_row_exponent": 0.948,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 9.1,
+            "probe_timed_out_at": null,
+            "n_candidates": 4,
+            "grid_workers": 4,
+            "outer_folds": 4,
+            "grid_seconds_serial": 24852.164596774102,
+            "serial_seconds": 2766.6989247380907,
+            "fixed_gb": 0.0048675537109375,
+            "grows_gb": 0.06964630126953125,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 3.93,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "frac": 0.2
+            }
+          }
+        }
+      },
+      "3": {
+        "mse": 13765.154863053624,
+        "rmse": 117.32499675283876,
+        "mae": 70.15792819228344,
+        "r2": 0.9001913236010379,
+        "refit_time": 0.027820110321044922,
+        "grid_time": 7889.177788625006,
+        "predict_time": 2767.737185917038,
+        "best_params": {
+          "frac": 0.01
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 9.98,
+          "projected_peak_gb": 0.42,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 4,
+          "probe": {
+            "sizes": [
+              11325,
+              20000
+            ],
+            "fit_seconds": [
+              0.0016,
+              0.0024
+            ],
+            "peak_gb": [
+              0.0049,
+              0.0082
+            ],
+            "fit_curve": {
+              "a": 1.2319521404112377e-06,
+              "exponent": 0.765,
+              "offset": 0.0
+            },
+            "predict_row_exponent": 0.948,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 9.1,
+            "probe_timed_out_at": null,
+            "n_candidates": 4,
+            "grid_workers": 4,
+            "outer_folds": 4,
+            "grid_seconds_serial": 24852.164596774102,
+            "serial_seconds": 2766.6989247380907,
+            "fixed_gb": 0.0048675537109375,
+            "grows_gb": 0.06964630126953125,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 3.93,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "frac": 0.2
+            }
+          }
+        }
+      },
+      "4": {
+        "mse": 14311.983756369238,
+        "rmse": 119.63270354033314,
+        "mae": 70.2946115556648,
+        "r2": 0.8977391989343896,
+        "refit_time": 0.025389909744262695,
+        "grid_time": 7427.232946000004,
+        "predict_time": 2479.2799285830115,
+        "best_params": {
+          "frac": 0.01
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 9.98,
+          "projected_peak_gb": 0.42,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 4,
+          "probe": {
+            "sizes": [
+              11325,
+              20000
+            ],
+            "fit_seconds": [
+              0.0016,
+              0.0024
+            ],
+            "peak_gb": [
+              0.0049,
+              0.0082
+            ],
+            "fit_curve": {
+              "a": 1.2319521404112377e-06,
+              "exponent": 0.765,
+              "offset": 0.0
+            },
+            "predict_row_exponent": 0.948,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 9.1,
+            "probe_timed_out_at": null,
+            "n_candidates": 4,
+            "grid_workers": 4,
+            "outer_folds": 4,
+            "grid_seconds_serial": 24852.164596774102,
+            "serial_seconds": 2766.6989247380907,
+            "fixed_gb": 0.0048675537109375,
+            "grows_gb": 0.06964630126953125,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 3.93,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "frac": 0.2
+            }
+          }
+        }
+      }
+    },
+    "XGB": {
+      "1": {
+        "mse": 348.05418066752185,
+        "rmse": 18.656210243978325,
+        "mae": 10.078941579194732,
+        "r2": 0.9973805918340561,
+        "refit_time": 1.0153589248657227,
+        "grid_time": 8.248709875013446,
+        "predict_time": 0.024073999986285344,
+        "best_params": {
+          "learning_rate": 0.1,
+          "max_depth": 8,
+          "n_estimators": 200,
+          "random_state": 16252329,
+          "verbosity": 0
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "official_split": false,
+        "transferred_from": "evidence/results_large_scale_mse"
+      },
+      "2": {
+        "mse": 344.765621067342,
+        "rmse": 18.56786528029924,
+        "mae": 9.854667226773696,
+        "r2": 0.9974106032832405,
+        "refit_time": 1.006108283996582,
+        "grid_time": 8.45948312501423,
+        "predict_time": 0.02250387499225326,
+        "best_params": {
+          "learning_rate": 0.1,
+          "max_depth": 8,
+          "n_estimators": 200,
+          "random_state": 16252329,
+          "verbosity": 0
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "official_split": false,
+        "transferred_from": "evidence/results_large_scale_mse"
+      },
+      "3": {
+        "mse": 334.41749485124285,
+        "rmse": 18.28708546628584,
+        "mae": 9.931620178167078,
+        "r2": 0.9975751985460515,
+        "refit_time": 1.1138560771942139,
+        "grid_time": 8.309124708001036,
+        "predict_time": 0.021561333996942267,
+        "best_params": {
+          "learning_rate": 0.1,
+          "max_depth": 8,
+          "n_estimators": 200,
+          "random_state": 16252329,
+          "verbosity": 0
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "official_split": false,
+        "transferred_from": "evidence/results_large_scale_mse"
+      },
+      "4": {
+        "mse": 360.82981565068155,
+        "rmse": 18.995520936544004,
+        "mae": 10.09224920199565,
+        "r2": 0.9974218286839255,
+        "refit_time": 1.012605905532837,
+        "grid_time": 8.3889519579825,
+        "predict_time": 0.024756541999522597,
+        "best_params": {
+          "learning_rate": 0.1,
+          "max_depth": 8,
+          "n_estimators": 200,
+          "random_state": 16252329,
+          "verbosity": 0
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "official_split": false,
+        "transferred_from": "evidence/results_large_scale_mse"
+      }
+    },
+    "LESS-B": {
+      "1": {
+        "mse": 235.43298828321602,
+        "rmse": 15.343825738166347,
+        "mae": 9.87814213462476,
+        "r2": 0.9982281635265553,
+        "refit_time": 22.30767798423767,
+        "grid_time": 280.97958904202096,
+        "predict_time": 2.071480457991129,
+        "best_params": {
+          "kernel_coeff": 0.01,
+          "local_estimator": "tree",
+          "n_subsets": 20,
+          "random_state": 16252329
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "official_split": false,
+        "transferred_from": "evidence/results_large_scale_mse"
+      },
+      "2": {
+        "mse": 237.24034202730778,
+        "rmse": 15.402608286498355,
+        "mae": 9.864943958737202,
+        "r2": 0.9982181826574628,
+        "refit_time": 22.704039096832275,
+        "grid_time": 273.99678270801087,
+        "predict_time": 2.0896416250034235,
+        "best_params": {
+          "kernel_coeff": 0.01,
+          "local_estimator": "tree",
+          "n_subsets": 20,
+          "random_state": 16252329
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "official_split": false,
+        "transferred_from": "evidence/results_large_scale_mse"
+      },
+      "3": {
+        "mse": 229.57474939317632,
+        "rmse": 15.151724304288813,
+        "mae": 9.771152740751354,
+        "r2": 0.9983353945451745,
+        "refit_time": 23.951030015945435,
+        "grid_time": 286.2384182920214,
+        "predict_time": 2.126826499996241,
+        "best_params": {
+          "kernel_coeff": 0.01,
+          "local_estimator": "tree",
+          "n_subsets": 20,
+          "random_state": 16252329
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "official_split": false,
+        "transferred_from": "evidence/results_large_scale_mse"
+      },
+      "4": {
+        "mse": 235.41066173739583,
+        "rmse": 15.343098179226901,
+        "mae": 9.88571260840814,
+        "r2": 0.9983179632356739,
+        "refit_time": 23.525040864944458,
+        "grid_time": 275.8554720420216,
+        "predict_time": 2.2362367090245243,
+        "best_params": {
+          "kernel_coeff": 0.01,
+          "local_estimator": "tree",
+          "n_subsets": 20,
+          "random_state": 16252329
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "official_split": false,
+        "transferred_from": "evidence/results_large_scale_mse"
+      }
+    },
+    "LESS-A": {
+      "1": {
+        "mse": 1956.4638516362795,
+        "rmse": 44.23193248815023,
+        "mae": 28.60892022944065,
+        "r2": 0.9852759206066097,
+        "refit_time": 33.95278286933899,
+        "grid_time": 270.96695858298335,
+        "predict_time": 2.99377837497741,
+        "best_params": {
+          "kernel_coeff": 0.01,
+          "local_estimator": "tree",
+          "n_subsets": 20,
+          "random_state": 16252329
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "skipped_budget": true
+        }
+      },
+      "2": {
+        "mse": 2001.7174617820683,
+        "rmse": 44.74055723593604,
+        "mae": 28.864801193328255,
+        "r2": 0.984965900580887,
+        "refit_time": 33.45496678352356,
+        "grid_time": 257.47773654200137,
+        "predict_time": 2.8712077499949373,
+        "best_params": {
+          "kernel_coeff": 0.01,
+          "local_estimator": "tree",
+          "n_subsets": 20,
+          "random_state": 16252329
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "skipped_budget": true
+        }
+      },
+      "3": {
+        "mse": 1958.1019228749071,
+        "rmse": 44.2504454539715,
+        "mae": 28.632675963188323,
+        "r2": 0.9858021531090096,
+        "refit_time": 43.62302494049072,
+        "grid_time": 277.90273341699503,
+        "predict_time": 2.9711354579776525,
+        "best_params": {
+          "kernel_coeff": 0.01,
+          "local_estimator": "tree",
+          "n_subsets": 20,
+          "random_state": 16252329
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "skipped_budget": true
+        }
+      },
+      "4": {
+        "mse": 2050.0918627866863,
+        "rmse": 45.27794013409495,
+        "mae": 28.9978061834828,
+        "r2": 0.9853518534037353,
+        "refit_time": 38.288108110427856,
+        "grid_time": 289.1948041670257,
+        "predict_time": 3.074977625044994,
+        "best_params": {
+          "kernel_coeff": 0.01,
+          "local_estimator": "tree",
+          "n_subsets": 20,
+          "random_state": 16252329
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "skipped_budget": true
+        }
+      }
+    },
+    "RF": {
+      "1": {
+        "mse": 2487.8637938305365,
+        "rmse": 49.8784902922145,
+        "mae": 25.51399638939386,
+        "r2": 0.9812766773126601,
+        "refit_time": 11.594680070877075,
+        "grid_time": 46.02241245802725,
+        "predict_time": 0.1499478750047274,
+        "best_params": {
+          "max_depth": 8,
+          "n_estimators": 100,
+          "random_state": 16252329
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "skipped_budget": true
+        }
+      },
+      "2": {
+        "mse": 2582.2624488107153,
+        "rmse": 50.81596647522032,
+        "mae": 25.75993458646394,
+        "r2": 0.9806056593286145,
+        "refit_time": 22.83473777770996,
+        "grid_time": 56.511644958052784,
+        "predict_time": 0.2930396660231054,
+        "best_params": {
+          "max_depth": 8,
+          "n_estimators": 200,
+          "random_state": 16252329
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "skipped_budget": true
+        }
+      },
+      "3": {
+        "mse": 2509.48711506883,
+        "rmse": 50.09478131571022,
+        "mae": 25.702132348286103,
+        "r2": 0.981804157680235,
+        "refit_time": 23.921769857406616,
+        "grid_time": 63.16247358301189,
+        "predict_time": 0.29822179197799414,
+        "best_params": {
+          "max_depth": 8,
+          "n_estimators": 200,
+          "random_state": 16252329
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "skipped_budget": true
+        }
+      },
+      "4": {
+        "mse": 2659.8802889585586,
+        "rmse": 51.57402727108441,
+        "mae": 26.111277211499345,
+        "r2": 0.9809948436416802,
+        "refit_time": 23.79125690460205,
+        "grid_time": 63.22258120798506,
+        "predict_time": 0.29463266604579985,
+        "best_params": {
+          "max_depth": 8,
+          "n_estimators": 200,
+          "random_state": 16252329
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "skipped_budget": true
+        }
+      }
+    },
+    "LGBM": {
+      "1": {
+        "mse": 351.985406368352,
+        "rmse": 18.761274113672343,
+        "mae": 10.102739950984647,
+        "r2": 0.9973510059670421,
+        "refit_time": 2.200550079345703,
+        "grid_time": 11.537239540950395,
+        "predict_time": 0.6886429170263,
+        "best_params": {
+          "learning_rate": 0.1,
+          "max_depth": 8,
+          "n_estimators": 200,
+          "num_leaves": 255,
+          "random_state": 16252329,
+          "verbose": -1
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "skipped_budget": true
+        }
+      },
+      "2": {
+        "mse": 347.3690722010156,
+        "rmse": 18.637839794381097,
+        "mae": 9.934646392966227,
+        "r2": 0.9973910498028299,
+        "refit_time": 2.2342560291290283,
+        "grid_time": 10.510173375019804,
+        "predict_time": 0.6963364169932902,
+        "best_params": {
+          "learning_rate": 0.1,
+          "max_depth": 8,
+          "n_estimators": 200,
+          "num_leaves": 255,
+          "random_state": 16252329,
+          "verbose": -1
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "skipped_budget": true
+        }
+      },
+      "3": {
+        "mse": 326.5936574646606,
+        "rmse": 18.071902430697786,
+        "mae": 9.857288675640557,
+        "r2": 0.997631927791867,
+        "refit_time": 2.181299924850464,
+        "grid_time": 10.542691249982454,
+        "predict_time": 0.7026341669843532,
+        "best_params": {
+          "learning_rate": 0.1,
+          "max_depth": 8,
+          "n_estimators": 200,
+          "num_leaves": 255,
+          "random_state": 16252329,
+          "verbose": -1
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "skipped_budget": true
+        }
+      },
+      "4": {
+        "mse": 352.82388825813223,
+        "rmse": 18.783606902246763,
+        "mae": 10.032274293996428,
+        "r2": 0.9974790319733068,
+        "refit_time": 2.191710948944092,
+        "grid_time": 9.668292166956235,
+        "predict_time": 0.6928204590221867,
+        "best_params": {
+          "learning_rate": 0.1,
+          "max_depth": 8,
+          "n_estimators": 200,
+          "num_leaves": 255,
+          "random_state": 16252329,
+          "verbose": -1
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "skipped_budget": true
+        }
+      }
+    },
+    "MLP": {
+      "1": {
+        "mse": 1052.4813852447505,
+        "rmse": 32.44196950317213,
+        "mae": 22.32200688941247,
+        "r2": 0.9920791690255619,
+        "refit_time": 6.563738107681274,
+        "grid_time": 22.439186208008323,
+        "predict_time": 0.013376582995988429,
+        "best_params": {
+          "alpha": 0.0001,
+          "max_iter": 5000
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "skipped_budget": true
+        }
+      },
+      "2": {
+        "mse": 970.5668141712754,
+        "rmse": 31.153921328963957,
+        "mae": 21.38701587768088,
+        "r2": 0.9927104607639521,
+        "refit_time": 6.416217088699341,
+        "grid_time": 20.577014875016175,
+        "predict_time": 0.012895749998278916,
+        "best_params": {
+          "alpha": 0.001,
+          "max_iter": 5000
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "skipped_budget": true
+        }
+      },
+      "3": {
+        "mse": 956.0232247646935,
+        "rmse": 30.919625236485217,
+        "mae": 20.66151149204364,
+        "r2": 0.9930680465552522,
+        "refit_time": 8.818259954452515,
+        "grid_time": 23.176013082964346,
+        "predict_time": 0.013471958984155208,
+        "best_params": {
+          "alpha": 0.01,
+          "max_iter": 5000
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "skipped_budget": true
+        }
+      },
+      "4": {
+        "mse": 976.969097989464,
+        "rmse": 31.25650489081375,
+        "mae": 20.592904443464185,
+        "r2": 0.9930194413103433,
+        "refit_time": 7.823945999145508,
+        "grid_time": 21.873681499972008,
+        "predict_time": 0.012698166014160961,
+        "best_params": {
+          "alpha": 0.001,
+          "max_iter": 5000
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "skipped_budget": true
+        }
+      }
+    },
+    "MAG": {
+      "1": {
+        "mse": 78908.43929120373,
+        "rmse": 280.90646003821934,
+        "mae": 175.42394870644128,
+        "r2": 0.40614587692970316,
+        "refit_time": 0.07150697708129883,
+        "grid_time": 1.923809917003382,
+        "predict_time": 0.0026690839731600136,
+        "best_params": {
+          "frac": 0.3,
+          "random_state": 16252329
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.18,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 3,
+          "probe": {
+            "sizes": [
+              5000,
+              10000,
+              20000
+            ],
+            "fit_seconds": [
+              0.0039,
+              0.0056,
+              0.0086
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0043
+            ],
+            "fit_curve": {
+              "a": 8.917873250332129e-07,
+              "exponent": 0.9,
+              "offset": 0.002
+            },
+            "predict_row_exponent": -0.491,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 9.1,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 3,
+            "grid_workers": 3,
+            "outer_folds": 4,
+            "grid_seconds_serial": 0.3761552839764446,
+            "serial_seconds": 0.051729430310006784,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.039261474609375,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.32,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "frac": 0.1,
+              "random_state": 16252329
+            }
+          }
+        }
+      },
+      "2": {
+        "mse": 78966.01654838657,
+        "rmse": 281.0089261009098,
+        "mae": 175.23146658128235,
+        "r2": 0.4069178262236599,
+        "refit_time": 0.06515002250671387,
+        "grid_time": 0.4393500410078559,
+        "predict_time": 0.0030522909946739674,
+        "best_params": {
+          "frac": 0.3,
+          "random_state": 16252329
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.18,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 3,
+          "probe": {
+            "sizes": [
+              5000,
+              10000,
+              20000
+            ],
+            "fit_seconds": [
+              0.004,
+              0.0057,
+              0.0095
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0044
+            ],
+            "fit_curve": {
+              "a": 3.68564886074248e-07,
+              "exponent": 1.0,
+              "offset": 0.0021
+            },
+            "predict_row_exponent": -0.529,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 9.1,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 3,
+            "grid_workers": 3,
+            "outer_folds": 4,
+            "grid_seconds_serial": 0.5373828234506984,
+            "serial_seconds": 0.07030172596791152,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.0395379638671875,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.51,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "frac": 0.1,
+              "random_state": 16252329
+            }
+          }
+        }
+      },
+      "3": {
+        "mse": 81610.08192302914,
+        "rmse": 285.6747834916991,
+        "mae": 176.12623989838676,
+        "r2": 0.4082598896572497,
+        "refit_time": 0.0645148754119873,
+        "grid_time": 0.47630366700468585,
+        "predict_time": 0.002654959011124447,
+        "best_params": {
+          "frac": 0.3,
+          "random_state": 16252329
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.18,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 3,
+          "probe": {
+            "sizes": [
+              5000,
+              10000,
+              20000
+            ],
+            "fit_seconds": [
+              0.004,
+              0.0056,
+              0.0086
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0044
+            ],
+            "fit_curve": {
+              "a": 8.784673260791417e-07,
+              "exponent": 0.9,
+              "offset": 0.0021
+            },
+            "predict_row_exponent": -0.379,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 9.1,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 3,
+            "grid_workers": 3,
+            "outer_folds": 4,
+            "grid_seconds_serial": 0.40732573272876405,
+            "serial_seconds": 0.051613352849548384,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.03967620849609375,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.52,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "frac": 0.1,
+              "random_state": 16252329
+            }
+          }
+        }
+      },
+      "4": {
+        "mse": 82911.06532564505,
+        "rmse": 287.94281606882475,
+        "mae": 176.65410125647378,
+        "r2": 0.40759072245100736,
+        "refit_time": 0.0625460147857666,
+        "grid_time": 0.4471781249740161,
+        "predict_time": 0.0025940420164261013,
+        "best_params": {
+          "frac": 0.3,
+          "random_state": 16252329
+        },
+        "n_train": 181200,
+        "n_test": 60400,
+        "n_features": 14,
+        "grouped": false,
+        "projection": {
+          "projected_hours": 0.0,
+          "projected_peak_gb": 0.17,
+          "budget_hours": 20.0,
+          "memory_cap_gb": 19.2,
+          "n_jobs": 3,
+          "probe": {
+            "sizes": [
+              5000,
+              10000,
+              20000
+            ],
+            "fit_seconds": [
+              0.0041,
+              0.0056,
+              0.009
+            ],
+            "peak_gb": [
+              0.0,
+              0.0,
+              0.0042
+            ],
+            "fit_curve": {
+              "a": 3.2565115668278804e-07,
+              "exponent": 1.0,
+              "offset": 0.0024
+            },
+            "predict_row_exponent": -0.532,
+            "memory_exponent": 1.0,
+            "memory_measurable": false,
+            "extrapolation_factor": 9.1,
+            "probe_timed_out_at": null,
+            "probe_incomplete": false,
+            "n_candidates": 3,
+            "grid_workers": 3,
+            "outer_folds": 4,
+            "grid_seconds_serial": 0.47631100253463804,
+            "serial_seconds": 0.06273449127381031,
+            "fixed_gb": 0.0,
+            "grows_gb": 0.0384320068359375,
+            "estimator_saturates_cores": false,
+            "candidate_cost_ratio_sum": 2.49,
+            "memory_margin": 1.5,
+            "slowest_candidate": {
+              "frac": 0.1,
+              "random_state": 16252329
+            }
+          }
+        }
+      }
+    }
+  },
+  "LESS-A": {
+    "1": 1956.4638516362795,
+    "2": 2001.7174617820683,
+    "3": 1958.1019228749071,
+    "4": 2050.0918627866863
+  },
+  "RF": {
+    "1": 2487.8637938305365,
+    "2": 2582.2624488107153,
+    "3": 2509.48711506883,
+    "4": 2659.8802889585586
+  },
+  "LGBM": {
+    "1": 351.985406368352,
+    "2": 347.3690722010156,
+    "3": 326.5936574646606,
+    "4": 352.82388825813223
+  },
+  "_mlp_at_1000": {
+    "1": 1052.4813852447505,
+    "2": 970.5668141712754,
+    "3": 956.0232247646935,
+    "4": 976.969097989464
+  },
+  "MLP": {
+    "1": 1052.4813852447505,
+    "2": 970.5668141712754,
+    "3": 956.0232247646935,
+    "4": 976.969097989464
+  },
+  "MAG": {
+    "1": 78908.43929120373,
+    "2": 78966.01654838657,
+    "3": 81610.08192302914,
+    "4": 82911.06532564505
+  }
+}

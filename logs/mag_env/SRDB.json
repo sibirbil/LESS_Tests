@@ -1,0 +1,92 @@
+{
+  "rand": {
+    "1": 262699.0064705616,
+    "2": 323990.5632856027,
+    "3": 457045.92328852776,
+    "4": 241318.3153472161
+  },
+  "_detail": {
+    "rand": {
+      "1": {
+        "mse": 262699.0064705616,
+        "worst_env_mse": 450326.1958746397,
+        "min_explained_variance": -0.031963401744160305,
+        "n_groups": 5,
+        "solver": "clarabel",
+        "max_weight": 0.8629798046308363,
+        "nonzero_weights": 3
+      },
+      "2": {
+        "mse": 323990.5632856027,
+        "worst_env_mse": 1875134.3125440648,
+        "min_explained_variance": -0.06531439296425068,
+        "n_groups": 5,
+        "solver": "clarabel",
+        "max_weight": 0.9999998597267343,
+        "nonzero_weights": 3
+      },
+      "3": {
+        "mse": 457045.92328852776,
+        "worst_env_mse": 1486388.3415072244,
+        "min_explained_variance": -0.30768042873221546,
+        "n_groups": 5,
+        "solver": "clarabel",
+        "max_weight": 0.999999895261673,
+        "nonzero_weights": 2
+      },
+      "4": {
+        "mse": 241318.3153472161,
+        "worst_env_mse": 375908.4826582332,
+        "min_explained_variance": 0.00012710813665931493,
+        "n_groups": 5,
+        "solver": "clarabel",
+        "max_weight": 0.9999999536835409,
+        "nonzero_weights": 4
+      }
+    },
+    "env": {
+      "1": {
+        "mse": 269570.06465931836,
+        "worst_env_mse": 514053.83852157026,
+        "min_explained_variance": -0.05541766570593047,
+        "n_groups": 6,
+        "solver": "clarabel",
+        "max_weight": 0.9307905946586691,
+        "nonzero_weights": 3
+      },
+      "2": {
+        "mse": 334461.33200880914,
+        "worst_env_mse": 1490184.335875888,
+        "min_explained_variance": -0.04093854631909313,
+        "n_groups": 6,
+        "solver": "clarabel",
+        "max_weight": 0.6023569009922152,
+        "nonzero_weights": 4
+      },
+      "3": {
+        "mse": 471677.6178900679,
+        "worst_env_mse": 1545394.7725102808,
+        "min_explained_variance": -0.08861427277001396,
+        "n_groups": 6,
+        "solver": "clarabel",
+        "max_weight": 0.608001293136346,
+        "nonzero_weights": 5
+      },
+      "4": {
+        "mse": 250448.14422167777,
+        "worst_env_mse": 429077.46945141436,
+        "min_explained_variance": 0.0009425923621795081,
+        "n_groups": 6,
+        "solver": "clarabel",
+        "max_weight": 0.3278298498559906,
+        "nonzero_weights": 6
+      }
+    }
+  },
+  "env": {
+    "1": 269570.06465931836,
+    "2": 334461.33200880914,
+    "3": 471677.6178900679,
+    "4": 250448.14422167777
+  }
+}
