@@ -145,3 +145,32 @@ LOCAL_PROBLEMS = {
     "SRDB": (srdb, srdb_groups),
 }
 ALL_PROBLEMS = {**SMALL_PROBLEMS, **HETERO_PROBLEMS, **LOCAL_PROBLEMS}
+
+# Rows and features of each problem as loaded. main.py runs problems in
+# increasing rows x features, so the small ones finish first.
+PROBLEM_SIZE = {
+    "HOUSING": (506, 13),
+    "AIRFOIL": (1503, 5),
+    "LASROSAS": (3443, 5),
+    "ABALONE": (4177, 7),
+    "SRDB": (5877, 5),
+    "CCPP": (9568, 4),
+    "AIRQUALITY": (7396, 8),
+    "CPUSMALLSCALE": (8192, 12),
+    "CADATA": (20640, 8),
+    "CRIME": (1994, 100),
+    "EDWARDS": (3694, 87),
+    "CASP": (45730, 9),
+    "ENERGY": (19735, 26),
+    "METRO": (48204, 67),
+    "SGEMM": (241600, 14),
+    "BLOGFEEDBACK": (60021, 280),
+    "CTSLICES_GROUPED": (53500, 384),
+    "TWITTER": (583250, 77),
+}
+assert set(PROBLEM_SIZE) == set(ALL_PROBLEMS)
+
+
+def by_size(names):
+    """Sort problem names by rows x features, smallest first."""
+    return sorted(names, key=lambda k: PROBLEM_SIZE[k][0] * PROBLEM_SIZE[k][1])

@@ -8,9 +8,11 @@ logs/<results-dir>/<PROBLEM>.json, and finished cells are skipped on a rerun.
 """
 
 import argparse
+import importlib.metadata
 import json
 import logging
 import os
+import platform
 import time
 import warnings
 from collections import defaultdict
@@ -44,6 +46,7 @@ from config import (
     LOCR_GRID,
     MAG_GRID,
     MLP_GRID,
+    N_GRID,
     N_IN_CV,
     N_OUT_CV,
     RANDOM_STATE,
@@ -57,13 +60,12 @@ from src.budget import (
     default_memory_cap,
     load_probe_cache,
 )
-from src.environments import environment_for
 from src.models.locreg import LocalRegression
 from src.models.magging import Magging
 
 # from src.models.anfis import SklearnAnfisRegressor
 from src.models.tsk import TSKRegressorPipeline
-from src.problems import ALL_PROBLEMS, ROW_IDENTITY, SMALL_PROBLEMS, row_identity_groups
+from src.problems import ALL_PROBLEMS, ROW_IDENTITY, by_size, row_identity_groups
 from src.protocol import check as protocol_check
 
 warnings.filterwarnings("ignore", message=".*does not have valid feature names.*")
@@ -76,10 +78,10 @@ LOG_DIR = "logs"
 # corrected run be written next to them instead of over them.
 
 ap = argparse.ArgumentParser()
-ap.add_argument("--problems", nargs="+", default=list(SMALL_PROBLEMS),
+ap.add_argument("--problems", nargs="+", default=list(ALL_PROBLEMS),
                 choices=list(ALL_PROBLEMS),
-                help="default: the seven problems the paper reports")
-ap.add_argument("--results-dir", default="results",
+                help="default: every problem the paper reports")
+ap.add_argument("--results-dir", default="r3_equal",
                 help="subdirectory of logs/ to write to")
 ap.add_argument("--skip", nargs="*", default=[],
                 help="estimator names to leave out of this run")
@@ -114,7 +116,17 @@ os.makedirs(LOG_DIR, exist_ok=True)
 # One policy for every problem and every runner, so the manifest is the same
 # string everywhere and a directory written under the old unshuffled inner loop
 # is refused instead of being appended to.
-protocol_check(RESULT_DIR, {"inner_cv": "same policy as the outer split"})
+# The results are tied to the grid size and the library versions, so a resumed
+# run, or files copied in from a second machine, cannot mix implementations.
+# Each method's exact grid is checked per problem file (see _manifest below).
+_protocol_extra = {
+    "inner_cv": "same policy as the outer split",
+    "search": "equal",
+    "n_equal": N_GRID,
+    "versions": {pkg: importlib.metadata.version(pkg) for pkg in
+                 ("less-learn", "scikit-learn", "lightgbm", "xgboost", "numpy")},
+}
+protocol_check(RESULT_DIR, _protocol_extra)
 
 logging.basicConfig(
     level=logging.INFO,
@@ -126,6 +138,11 @@ logging.basicConfig(
 )
 
 logger = logging.getLogger(__name__)
+
+
+def jsonable(v):
+    """Plain JSON values pass through; tuples, kernels and estimators are repr'd."""
+    return v if isinstance(v, (int, float, str, bool, type(None))) else repr(v)
 
 
 def save_results(path, payload):
@@ -151,7 +168,8 @@ if __name__ == "__main__":
     # One probe per (estimator, rows, features), reused across folds and runs.
     probes = load_probe_cache(RESULT_DIR)
 
-    for problem_name in args.problems:
+    # Smallest first, whatever order --problems was given in.
+    for problem_name in by_size(args.problems):
         problem, group_spec = ALL_PROBLEMS[problem_name]
         logger.info(f"Starting problem: {problem_name}")
 
@@ -209,19 +227,31 @@ if __name__ == "__main__":
         grid_models = [g for g in grid_models if g[0] not in args.skip]
         if args.only:
             grid_models = [g for g in grid_models if g[0] in args.only]
+        for name, grid, _ in grid_models:
+            size = int(np.prod([len(v) for v in grid.values()]))
+            if size != N_GRID:
+                raise SystemExit(f"{name} grid has {size} points, not {N_GRID}")
 
-        # Magging is the one method here that is defined over environments rather
-        # than over a sample: where the data carries them, they are what it gets.
-        # Everywhere else it keeps the random disjoint partition, and the reason a
-        # label was refused is recorded beside the score.
-        env_codes, env_note = environment_for(problem_name, DATA_PATH, X.shape[1])
-        if env_codes is not None:
-            logger.info(f"{problem_name}: MAG will use the data's own environment "
-                        f"({len(np.unique(env_codes))} groups)")
-            previous_results.setdefault("_mag_environment", {})["groups"] = int(
-                len(np.unique(env_codes)))
-        elif env_note:
-            previous_results.setdefault("_mag_environment", {})["refused"] = env_note
+        # Merged per method, so a later --only call adds to the record instead
+        # of replacing it. A method whose stored grid differs from the current
+        # one is refused: resuming would mix folds searched over different grids.
+        manifest = previous_results.setdefault("_manifest", {})
+        manifest.update({"search": "equal", "n_candidates": N_GRID})
+        for name, grid, _ in grid_models:
+            current = {k: [jsonable(v) for v in vals] for k, vals in grid.items()}
+            stored = manifest.get("methods", {}).get(name, {}).get("grid")
+            if stored is not None and stored != current and previous_results.get(name):
+                raise SystemExit(f"{problem_name}: {name} was run with a different "
+                                 f"grid; write to another --results-dir")
+            manifest.setdefault("methods", {})[name] = {
+                "host": platform.node(),
+                "less_version": importlib.metadata.version("less-learn"),
+                "grid": current,
+            }
+
+        # MAG uses its random partition on every problem, so its 48 grid points
+        # are 48 distinct models; the variant that uses a dataset's own
+        # environments is run separately by script_funcs/mag_environments.py.
 
         for fold_num, (train_index, test_index) in enumerate(
             outer_fold.split(X, y, groups=groups), start=1
@@ -292,13 +322,7 @@ if __name__ == "__main__":
                     transformer=StandardScaler(),
                 )
 
-                # With an environment in hand, frac has nothing left to choose:
-                # the partition comes from the labels, so the three grid points
-                # would fit the same model three times and record a meaningless
-                # winner.
                 cell_grid = grid
-                if estimator_name == "MAG" and env_codes is not None:
-                    cell_grid = {k: v for k, v in grid.items() if k != "frac"}
 
                 gcv = GridSearchCV(
                     estimator=model,
@@ -319,16 +343,23 @@ if __name__ == "__main__":
                     scoring=SCORING,
                     verbose=1,
                     refit=True,
+                    # A candidate that fails would leave fewer than N_GRID
+                    # evaluated; the cell fails loudly instead.
+                    error_score="raise",
                 )
 
                 try:
                     start = time.perf_counter()
-                    fit_params = {}
-                    if estimator_name == "MAG" and env_codes is not None:
-                        # sklearn slices a fit param of the right length with the
-                        # fold, so the estimator sees its own rows' labels.
-                        fit_params["regressor__env"] = env_codes[train_index]
-                    gcv.fit(X_train, y_train, groups=g_train, **fit_params)
+                    gcv.fit(X_train, y_train, groups=g_train)
+                    cvr = gcv.cv_results_
+                    split_scores = np.array([cvr[f"split{i}_test_score"]
+                                             for i in range(N_IN_CV)])
+                    if (len(cvr["params"]) != N_GRID
+                            or not np.all(np.isfinite(split_scores))):
+                        raise RuntimeError(
+                            f"incomplete search: {len(cvr['params'])} candidates, "
+                            f"{int(np.sum(~np.isfinite(split_scores)))} "
+                            f"non-finite inner-fold scores")
                     grid_time = time.perf_counter() - start
 
                     start = time.perf_counter()
@@ -377,10 +408,7 @@ if __name__ == "__main__":
                         "grid_time": float(grid_time),
                         "predict_time": float(predict_time),
                         "best_params": {
-                            k.replace("regressor__regressor__", ""): (
-                                v if isinstance(v, (int, float, str, bool,
-                                                    type(None)))
-                                else repr(v))
+                            k.replace("regressor__regressor__", ""): jsonable(v)
                             for k, v in gcv.best_params_.items()
                         },
                         "n_train": int(X_train.shape[0]),
@@ -389,6 +417,17 @@ if __name__ == "__main__":
                         "grouped": groups is not None,
                         "projection": projection,
                     }
+                # Every candidate's inner score and cost, not just the winner's:
+                # the equal budget can only be audited from these.
+                previous_results["_metrics"][estimator_name][str(fold_num)][
+                    "candidates"] = [
+                        {"params": {k.replace("regressor__regressor__", ""): jsonable(v)
+                                    for k, v in cvr["params"][i].items()},
+                         "inner_mse": float(-cvr["mean_test_score"][i]),
+                         "inner_mse_std": float(cvr["std_test_score"][i]),
+                         "mean_fit_time": float(cvr["mean_fit_time"][i])}
+                        for i in range(len(cvr["mean_test_score"]))
+                    ]
 
                 # JSON olarak dosyaya yaz
                 save_results(result_path, previous_results)
